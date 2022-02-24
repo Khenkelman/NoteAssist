@@ -1,31 +1,31 @@
 [
 	{
-		"Category": "blandit at, nisi. Cum sociis natoque penatibus et magnis dis",
-		"Title": "pede, nonummy ut,",
-		"Description": "luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed",
-		"Output": "arcu vel quam dignissim pharetra. Nam ac nulla. In tincidunt"
+		"Category": "Telehealth",
+		"Title": "Title 1",
+		"Description": "Desc 1",
+		"Output": "Output 1"
 	},
 	{
-		"Category": "lobortis risus. In mi pede, nonummy ut, molestie in, tempus",
-		"Title": "lectus justo eu",
-		"Description": "rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed,",
-		"Output": "sit amet diam eu dolor egestas rhoncus. Proin nisl sem,"
+		"Category": "Presentation",
+		"Title": "Title 2",
+		"Description": "Desc 2",
+		"Output": "Output 2"
 	},
 	{
-		"Category": "quam quis diam. Pellentesque habitant morbi tristique senectus et netus",
-		"Title": "aliquam eros turpis",
+		"Category": "Symptoms",
+		"Title": "Title 3",
 		"Description": "magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec",
 		"Output": "Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada"
 	},
 	{
-		"Category": "eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed",
-		"Title": "et risus. Quisque",
+		"Category": "Diagnoses",
+		"Title": "Title 4",
 		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
 		"Output": "Donec vitae erat vel pede blandit congue. In scelerisque scelerisque"
 	},
 	{
-		"Category": "et malesuada fames ac turpis egestas. Fusce aliquet magna a",
-		"Title": "arcu. Sed eu",
+		"Category": "Disruption",
+		"Title": "Title 5",
 		"Description": "mattis ornare, lectus ante dictum mi, ac mattis velit justo",
 		"Output": "ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed tortor."
 	}

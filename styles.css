@@ -55,7 +55,7 @@ h3 {
     border: 0px;
     border-bottom: 2pt solid #045174;
 }
-#arrow{
+#arrow1,#arrow2{
     width:10%;
     float:left;
     font-weight:900;
