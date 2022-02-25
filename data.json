@@ -1,0 +1,32 @@
+[
+	{
+		"Category": "Telehealth",
+		"Title": "Title 1",
+		"Description": "Desc 1",
+		"Output": "Output 1"
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Title 2",
+		"Description": "Desc 2",
+		"Output": "Output 2"
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Title 3",
+		"Description": "magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec",
+		"Output": "Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada"
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Title 4",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "Donec vitae erat vel pede blandit congue. In scelerisque scelerisque"
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Title 5",
+		"Description": "mattis ornare, lectus ante dictum mi, ac mattis velit justo",
+		"Output": "ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed tortor."
+	}
+]
