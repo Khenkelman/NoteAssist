@@ -14,7 +14,7 @@
     <!---------------------------------->
     
     <heading>
-        <h3>Presentation</h3>
+        <h3 id="categoryLarge"></h3>
     </heading>
     
     <!---------------------------------->
@@ -23,7 +23,7 @@
     <div class=leftcol>
         <!-- Question Asked-->
         <div id=question>
-            <p> What symptoms has the client experienced since the last session? </p>
+            <p id='descriptorParagraph'></p>
         </div>
 
         <!-- Search Bar -->
@@ -31,7 +31,7 @@
             <p id=searchtitle>Search</p>
             <p id="testp"></p>
             <button id=arrow1 onclick="categoryMove('subtract')">&#60;</button>
-            <input type="text" placeholder="Search Presentation" id=searchbox>
+            <input type="text" id="searchbox">
             <button id=arrow2 onclick="categoryMove('add')">&#62;</button>
         </div>
 
@@ -46,7 +46,7 @@
     
 <!----------------------------------------->
 <!------------------- Right Column -------->
-<!----------------------------------------->
+<!---------------------------------------->
     
     <div class=rightcol>
         <div id=textbox>
@@ -66,7 +66,7 @@
     
 <!------------------------------------------>
 <!-------------- Floating + Sign ----------->
-<!------------------------------------------>
+<!------------------------------------->
     <div id=addCircle>
        <a href="" style=color:white;>&#43;</a>
     </div>
