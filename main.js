@@ -13,6 +13,8 @@ function categoryMove(command){
     categorySelected -= 1; 
   }
   var categoryCurrent = categories[categorySelected]; // < Very important to how this all works, but not a very good system I would say
+
+  // Printing information to web page
   document.getElementById('categoryLarge').innerHTML = categoryCurrent;
   document.getElementById('searchbox').placeholder = "Search " + categoryCurrent;
   var categoryDescriptor = "";
@@ -84,29 +86,16 @@ function categoryMove(command){
   // End of JSON calling function
 }
 
-// Right now this function literally just initializes the Telehealth titles when the page loads, because the above function relies on the arrows being clicked to be called. I am going to change this and we can repurpose this function for other JSON related things, is more of a hotfix
-function loadOptions(command){
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var testData = JSON.parse(xhttp.responseText);
-    //print
-      if(command == "textbox"){
-        var output = '';
-        for(var i = 0; i < testData.length; i++){
-          if(testData[i].Category == categoryCurrent){
-            output += '<input type="checkbox" id=${testData[i].Title}><label for=${testData[i].Title}>'+"  "+testData[i].Title+'</label><br><br>';
-          }
-        }
-        document.getElementById('boxes').innerHTML = output;
-        document.getElementById('categoryLarge').innerHTML = categoryCurrent;
-        document.getElementById('searchbox').placeholder = "Search " + categoryCurrent;
-        document.getElementById('descriptorParagraph').innerHTML = "Is the client suitable for telehealth?";
-      }
-    }
-  };
-  xhttp.open("GET", "data.json", true);
-  xhttp.send();
-}
+// Right now this function literally does nothing, keeping it as a template for the JSON call. Will remove when I don't need it.
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var testData = JSON.parse(xhttp.responseText);
+      
+  }
+};
+xhttp.open("GET", "data.json", true);
+xhttp.send();
 
-loadOptions("textbox");
+
+categoryMove();
