@@ -73,7 +73,7 @@ function categoryMove(command){
       var output = '';
       for(var i = 0; i < testData.length; i++){
         if(testData[i].Category == categoryCurrent){
-          output += '<input type="checkbox" id=${testData[i].Title})"><label for=${testData[i].Title}>'+"  "+testData[i].Title+'</label><br><br>';
+            output += '<input type="checkbox" id="' + testData[i].Title + '" Desc="' + testData[i].Description + '" Output="' + testData[i].Output + '">' + testData[i].Title + "</br><br>"
         }  
       }
       document.getElementById('boxes').innerHTML = output;
