@@ -70,6 +70,7 @@ h3 {
 }
 #copiedtext{
     margin: 20pt;
+    resize: none;
 }
 #addCircle{
     position: fixed;
