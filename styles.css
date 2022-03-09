@@ -35,12 +35,12 @@ h3 {
     font-family: sans-serif;
     font-size: 10pt;
     text-align: center;
-    margin-bottom: 20pt;   
+    margin-bottom: 20pt; 
 }
 #search {
     margin-left: 20%;
     margin-right: 20%;
-    text-align: center
+    text-align: center;
 }
 #searchtitle{
     margin: 0;
@@ -66,7 +66,7 @@ h3 {
     padding: 4pt;
     box-shadow: 0px 0px 5px gray;
     border-radius: 10px;
-    height: 100%;
+    height: auto;
 }
 #copiedtext{
     margin: 20pt;
