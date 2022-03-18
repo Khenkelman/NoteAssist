@@ -1,121 +1,128 @@
 * {
-    margin: 0px;
+  margin: 0px;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 header {
-    background-color: #045174;
-    color: white;
-    font-family: sans-serif;
-    font-size: 10pt;
-    margin: 0;
-    padding-top: 15pt;
-    padding-bottom: 40pt;
-    padding-left: 45pt;
+  background-color: #045174;
+  color: white;
+  font-family: sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding-top: 15pt;
+  padding-bottom: 40pt;
+  padding-left: 45pt;
 }
 h3 {
-    margin-top: 30px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: 400;
+  margin-top: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 .leftcol {
-    float: left;
-    width: 50%;
-    padding-top: 20pt;
+  float: left;
+  width: 50%;
+  padding-top: 20pt;
 }
 .rightcol {
-    float: left;
-    width: 50%;
-    padding-top: 20pt;
+  float: left;
+  width: 50%;
+  padding-top: 20pt;
     
 }
 #question {
-    font-family: sans-serif;
-    font-size: 10pt;
-    text-align: center;
-    margin-bottom: 20pt;   
+  font-family: sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  margin-bottom: 20pt; 
 }
 #search {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
 }
 #searchtitle{
-    margin: 0;
-    margin-left:10%;
-    text-align: left;
-    font-family: monospace;
-    color: #045174
+  margin: 0;
+  margin-left:10%;
+  text-align: left;
+  font-family: monospace;
+  color: #045174
 }
 #searchbox{
-    width:80%;
-    float:left;
-    border: 0px;
-    border-bottom: 2pt solid #045174;
+  width:80%;
+  float:left;
+  border: 0px;
+  border-bottom: 2pt solid #045174;
 }
 #arrow1,#arrow2{
-    width:10%;
-    float:left;
-    font-weight:900;
-    color: black;
+  width:10%;
+  float:left;
+  font-weight:900;
+  color: black;
 }
 #textbox{
-    margin: 20pt;
-    padding: 4pt;
-    box-shadow: 0px 0px 5px gray;
-    border-radius: 10px;
-    height: 100%;
+  margin: 20pt;
+  padding: 4pt;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 10px;
+  height: auto;
+  position:relative;
 }
 #copiedtext{
-    margin: 20pt;
+  margin:auto;
+  margin-top: 40pt;
+  height: 200px;
+  width: 100%;
+  resize: none;
+  border: none;
+  position:relative;
+  overflow-y:auto;
+  font-size: 15px;
+  font-family: Alata;
 }
 #addCircle{
-    position: fixed;
-    font-size: 30pt;
-    font-weight: bold;
-    background-color: darksalmon;
-    border-radius: 22pt;
-    padding: 2pt 11pt;
-    margin-left: 11pt;
-    bottom: 10pt;
+  position: fixed;
+  font-size: 30pt;
+  font-weight: bold;
+  background-color: darksalmon;
+  border-radius: 22pt;
+  padding: 2pt 11pt;
+  margin-left: 11pt;
+  bottom: 10pt;
 }
 #newnote{
-    float:right;
-    margin-right: 20pt;
-    font-size: 15pt;
-    color: white;
+  float:right;
+  margin-right: 20pt;
+  font-size: 15pt;
+  color: white;
 }
 #programname{
-    float: left;
-    font-size: 20pt;
-    padding-left: 10pt;
+  float: left;
+  font-size: 20pt;
+  padding-left: 10pt;
 }
 #copybox{
-    display: inline-block;
-    border-radius: 40pt;
-    background-color: lightgray;
-    padding-top: 3pt;
-    padding-bottom: 5pt;
-    padding-left: 8pt;
-    padding-right: 10pt;
-    font-family: monospace;
-    font-size: 14pt;
-    margin-top: 10pt;
-    margin-left: 10pt;
-    color:black;
+  display: inline;
+  border-radius: 40pt;
+  background-color: lightgray;
+  font-family: monospace;
+  font-size: 14pt;
+  margin-top: 10pt;
+  margin-left: 10pt;
+  color:black;
+  position: absolute;
 }
 #menu{
-    float:left;
-    color: white;
-    font-size: 22;
+  float:left;
+  color: white;
+  font-size: 22;
 }
 #boxes{
-    clear:both;
-    padding-top: 10pt;
-    padding-left: 26%;
+  clear:both;
+  padding-top: 10pt;
+  padding-left: 26%;
 }
 #boxes label{
-    font-family: sans-serif;
+  font-family: sans-serif;
 }

@@ -99,3 +99,9 @@ xhttp.send();
 
 
 categoryMove();
+
+function copyTextFunction(){
+  textHolder = document.getElementById('copiedtext');
+  textHolder.select();
+  document.execCommand("copy");
+}
