@@ -97,6 +97,7 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "data.json", true);
 xhttp.send();
 
+//ඞ
 
 categoryMove();
 
@@ -104,4 +105,10 @@ function copyTextFunction(){
   textHolder = document.getElementById('copiedtext');
   textHolder.select();
   document.execCommand("copy");
+}
+
+function newNoteAlert(){
+  if(confirm("Are you sure you want to make a new note?")){
+    location.reload();
+  }
 }
