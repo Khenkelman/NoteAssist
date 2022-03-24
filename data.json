@@ -1,39 +1,39 @@
 [
 	{
 		"Category": "Telehealth",
-		"Title": "Title 1",
+		"Title": "Has Telehealth",
 		"Description": "Desc 1",
-		"Output": "Output 1"
+		"Output": "The client has telehealth"
 	},
   {
 		"Category": "Telehealth",
-		"Title": "Title 1.2",
+		"Title": "Does NOT have Telehealth",
 		"Description": "Desc 1.2",
-		"Output": "Output 1.2"
+		"Output": "the client does not have telehealth"
 	},
 	{
 		"Category": "Presentation",
-		"Title": "Title 2",
+		"Title": "Pretty",
 		"Description": "Desc 2",
-		"Output": "Output 2"
+		"Output": "the client is pretty"
 	},
   {
 		"Category": "Presentation",
-		"Title": "Title 2.2",
+		"Title": "Gross",
 		"Description": "Desc 2.2",
-		"Output": "Output 2"
+		"Output": "the client is gross"
 	},
 	{
 		"Category": "Symptoms",
-		"Title": "Title 3",
+		"Title": "this symptom",
 		"Description": "magna. Sed eu eros. Nam consequat dolor vitae dolor. Donec",
-		"Output": "Quisque varius. Nam porttitor scelerisque neque. Nullam nisl. Maecenas malesuada"
+		"Output": "the client has this and that symptom"
 	},
 	{
 		"Category": "Diagnoses",
-		"Title": "Title 4",
+		"Title": "this diagnoses",
 		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "Donec vitae erat vel pede blandit congue. In scelerisque scelerisque"
+		"Output": "the client found this solution"
 	},
 	{
 		"Category": "Disruption",
