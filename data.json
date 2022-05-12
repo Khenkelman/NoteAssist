@@ -5,7 +5,7 @@
 		"Description": "Desc 1",
 		"Output": "The client has telehealth"
 	},
-  {
+  	{
 		"Category": "Telehealth",
 		"Title": "Does NOT have Telehealth",
 		"Description": "Desc 1.2",
@@ -17,7 +17,7 @@
 		"Description": "Desc 2",
 		"Output": "the client is pretty"
 	},
-  {
+  	{
 		"Category": "Presentation",
 		"Title": "Gross",
 		"Description": "Desc 2.2",

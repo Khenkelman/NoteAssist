@@ -38,7 +38,6 @@ categoryMove();
 //#############    ARROW FUNCTION    ############//
 // This is the function that builds the list of selectable "titles" that correspond to the categories. These are called from the JSON file. It is wrapped with a JSON calling function so you can access any data from the JSON file if you put your code above the xhttp.open/send lines
 function categoryMove(command){
-    numBoxesPerCategory();
 // Arrows have an onclick in HTML that calls this function with a parameter that tells the below conditionals what to do
     if(command == "add"&&categorySelected<12){
     categorySelected += 1; 
@@ -93,6 +92,7 @@ function categoryMove(command){
           categoryDescriptor = "What steps will the therapist take in relationship to the treatment progress?";
           break;
     }
+    numBoxesPerCategory();
   document.getElementById('descriptorParagraph').innerHTML = categoryDescriptor;
 }
 
@@ -214,7 +214,40 @@ function hideBoxes(minCount, maxCount, testDataLength){
     }
 }
 
+function addTextBox(){
 
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var testData = JSON.parse(xhttp.responseText);
+
+        
+        
+    //______Printing Checkboxes inside 'Divs'______//
+      var output = '';
+      for(var i = 0; i < testData.length; i++){
+      }
+        
+          const checkBox = {
+              Category: "test",
+              Title: "test2",
+          }
+          window.localStorage.
+          window.localStorage.setItem('checkBox', JSON.stringify(checkBox));
+          var result = window.localStorage.getItem("checkBox");
+        
+        document.getElementById("resultt").innerHTML = result
+      
+        
+        
+    }};    
+
+    //____________End JSON Call____________________//
+    xhttp.open("GET", "data.json", true);
+    xhttp.send();
+
+}
 // ##### COPY BUTTON FUNCTIONALITY ####### //
 function copyTextFunction(){
   textHolder = document.getElementById('copiedtext');
@@ -229,8 +262,6 @@ function newNoteAlert(){
     location.reload();
   }
 }
-
-
 
 
 
