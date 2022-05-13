@@ -1,0 +1,86 @@
+<html>
+    <link rel="stylesheet" href="styles.css">  
+    
+    <!---------------------------------->
+    <!------------- Blue Header -------->
+    <!---------------------------------->
+    
+    <header>
+        <a id=menuIcon>&#9776;</a>
+        <div id=programname>NoteAssist</div>
+        <button id=newnote>&#9998; New Note</button>
+    </header>
+    
+    <!---------------------------------->
+    
+    <heading>
+        <h3 id="categoryLarge"></h3>
+    </heading>
+    
+    <!---------------------------------->
+    <!------------- Left Column -------->
+    <!---------------------------------->
+    <div class=leftcol>
+        <!-- Question Asked-->
+        <div id=question>
+            <p id='descriptorParagraph'></p>
+        </div>
+
+        <!-- Search Bar -->
+        <div id=search>
+            <p id=searchtitle>Search Telehealth</p>
+            <p id="testp"></p>
+            <button id=arrow1 onclick="categoryMove('subtract')">&#x27A4;</button>
+            <input type="text" id="searchbox" onkeyup="SearchUpdate()">
+            <button id=arrow2 onclick="categoryMove('add')">&#x27A4;</button>
+        </div>
+
+        
+        <!-- Check Boxes -->
+        <div id=boxes>
+            <input type='checkbox' id="test"> <label for="test">Test</label>
+        <!-- javascript file takes care of this part-->  
+        </div>
+        
+        <div id=menu>
+            <h2 style=text-align:center;>Developer Tools</h2>
+                <button style=margin-left:90%; id=menuExit>X</button>
+            <p>Reset Local Storage Saved on Device:</p>
+            <p style=font-size:8pt;>(This will remove all custom statements & pull from the .JSON)</p>
+        <button id=resetLocalStorage> Reset Local Storage</button>
+        </div>
+    </div>
+    
+<!----------------------------------------->
+    
+<!----------------------------------------->
+<!------------------- Right Column -------->
+<!---------------------------------------->
+    
+    <div class=rightcol>
+        <div id=textbox>
+
+            <!--Turning this into a button break everything and idk why-->
+            <button id="copybox">&#10063; Copy</button> 
+            <textarea id=copiedtext></textarea>
+            
+        </div>
+            <div id=newChkBox>
+                <button id=exit>X</button>
+                <h2>Add Custom Statement</h2>
+                <label for="text">Title</label><br>
+                <input type='text' id=text><br>
+                <label for="descriptor">Descriptor</label><br>
+                <input type='text' id=descriptor><br>
+                <button id=create>Create</button>
+            </div>
+        </div>
+    
+<!------------------------------------------>
+<!-------------- Floating + Sign ----------->
+<!------------------------------------->
+    <div id=addCircle>
+       <a id="addChkBox" style=color:white;>&#43;</a>
+    </div>
+<script src="main.js"></script>
+</html>

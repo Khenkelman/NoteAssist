@@ -1,0 +1,248 @@
+[
+	{
+		"Category": "Telehealth",
+		"Title": "Private Location",
+		"Description": "Desc 1",
+		"Output": "client is in a private location."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Scope of telehealth",
+		"Description": "Desc 1.2",
+		"Output": "client plans to use telehealth."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Satisfactory connection",
+		"Description": "Desc 1.2",
+		"Output": "client is satisfied."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Eye contact reminder",
+		"Description": "On-Time",
+		"Output": "client is constantly being reminded on eye contact."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Client Location",
+		"Description": "desc",
+		"Output": "client is at home."
+	},
+	{
+		"Category": "Telehealth",
+		"Title": "Private Location",
+		"Description": "Desc 1",
+		"Output": "client is in a private location."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Scope of telehealth",
+		"Description": "Desc 1.2",
+		"Output": "client plans to use telehealth."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Satisfactory connection",
+		"Description": "Desc 1.2",
+		"Output": "client is satisfied."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Eye contact reminder",
+		"Description": "On-Time",
+		"Output": "client is constantly being reminded on eye contact."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Client Location",
+		"Description": "desc",
+		"Output": "client is at home."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Insight Good",
+		"Description": "Has a good insight.",
+		"Output": "Has a good insight."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Mood Positive",
+		"Description": "Has a positive mood.",
+		"Output": "Has a positive mood."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Mood Negative",
+		"Description": "Has a negative mood.",
+		"Output": "Has a negative mood."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Tearful",
+		"Description": "Has a positive mood.",
+		"Output": "emotional."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Hostile",
+		"Description": "client is very hostile",
+		"Output": "client is very hostile."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Speech Hesitant",
+		"Description": "client is very hostile",
+		"Output": "the client is uncomfortable speaking."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Dirty",
+		"Description": "client is very hostile",
+		"Output": "the client has a lack of hygiene."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Dressed-up",
+		"Description": "client is very hostile",
+		"Output": "the client has is extra dressed up/motivated."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Insight Good",
+		"Description": "Has a good insight.",
+		"Output": "Has a good insight."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Mood Positive",
+		"Description": "Has a positive mood.",
+		"Output": "Has a positive mood."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Mood Negative",
+		"Description": "Has a negative mood.",
+		"Output": "Has a negative mood."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Tearful",
+		"Description": "Has a positive mood.",
+		"Output": "emotional."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Hostile",
+		"Description": "client is very hostile",
+		"Output": "client is very hostile."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Speech Hesitant",
+		"Description": "client is very hostile",
+		"Output": "the client is uncomfortable speaking."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Dirty",
+		"Description": "client is very hostile",
+		"Output": "the client has a lack of hygiene."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Dressed-up",
+		"Description": "client is very hostile",
+		"Output": "the client has is extra dressed up/motivated."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Restlessness",
+		"Description": "Trouble sleeping",
+		"Output": "the client misses out on multiple hours of sleep"
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Grief",
+		"Description": "Crying often",
+		"Output": "the client seems to be very upset."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Anger",
+		"Description": "uneasy with temper",
+		"Output": "the client is uneasy with anger."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "this diagnoses",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Disruption",
+		"Title": "School",
+		"Description": "at school",
+		"Output": "Client is affected at school."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Family",
+		"Description": "around family",
+		"Output": "Client is affected around direct family"
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Home",
+		"Description": "at home",
+		"Output": "Client is affected at home."
+	},
+	{
+		"Category": "Safety",
+		"Title": "this diagnoses",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Topics",
+		"Title": "this topic",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Stage",
+		"Title": "this Stage",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Interventions",
+		"Title": "this Interventions",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Response",
+		"Title": "this Response",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Strengths",
+		"Title": "this Strengths",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Progress",
+		"Title": "this Progress",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	},
+	{
+		"Category": "Tasks",
+		"Title": "this Tasks",
+		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
+		"Output": "the client found this solution"
+	}
+]
