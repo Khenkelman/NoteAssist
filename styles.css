@@ -1,3 +1,10 @@
+@font-face{
+    font-family:"CustomTitle";
+    src:url("Signatra.ttf")
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
 * {
   margin: 0px;
 }
@@ -10,14 +17,19 @@ header {
   font-family: sans-serif;
   font-size: 10pt;
   margin: 0;
-  padding-top: 15pt;
-  padding-bottom: 40pt;
+  padding-top: 5pt;
+  padding-bottom: 50pt;
   padding-left: 45pt;
 }
+label {
+    font-size: 12pt;
+    font-family: cursive;
+}
 h3 {
-  margin-top: 30px;
+  margin-top: 1%;
   text-align: center;
   font-family: sans-serif;
+    font-size: 17pt;
   font-weight: 400;
 }
 .leftcol {
@@ -50,6 +62,25 @@ h3 {
   color: #045174
 }
 #searchbox{
+    width:80%;
+    padding-top: 2%;
+    float:left;
+    border: 0px;
+    border-bottom: 1pt solid #045174;
+    margin-bottom: 3%;
+}
+#searchbox:hover{
+  width:80%;
+  float:left;
+  border: 0px;
+  border-bottom: 2pt solid #045174;
+}
+#searchbox:focus{
+    outline: none;
+    border:0px solid red;
+  border-bottom: 2pt solid #045174;
+}
+{
   width:80%;
   float:left;
   border: 0px;
@@ -60,26 +91,44 @@ h3 {
   float:left;
   font-weight:900;
   color: black;
+  cursor: pointer;
+    background-color: white;
+    border: white;
+    font-size: 1.5em;
+    color: #045174
+}
+#arrow1:hover,#arrow2:hover{
+    font-size: 1.6em;
+}
+#arrow1{
+    transform: rotate(180deg)
 }
 #textbox{
-  margin: 20pt;
   padding: 4pt;
   box-shadow: 0px 0px 5px gray;
   border-radius: 10px;
-  height: auto;
   position:relative;
+    width: 90%;
+    height: 70%;
+    
 }
 #copiedtext{
   margin:auto;
   margin-top: 40pt;
-  height: 200px;
+  height: 90%;
   width: 100%;
   resize: none;
   border: none;
   position:relative;
   overflow-y:auto;
   font-size: 15px;
-  font-family: Alata;
+  font-family: sans-serif;
+    padding: 0% 3% 3% 3%;
+}
+#copiedtext:focus{
+    outline: none;
+    border:0px solid red;
+    
 }
 #addCircle{
   position: fixed;
@@ -90,39 +139,233 @@ h3 {
   padding: 2pt 11pt;
   margin-left: 11pt;
   bottom: 10pt;
+    cursor: pointer;
+}
+#addCircle:hover{
+  font-size: 33pt;
+  margin-left: 10pt;
+  bottom: 9pt;
 }
 #newnote{
   float:right;
   margin-right: 20pt;
-  font-size: 15pt;
+  font-size: 25pt;
+    font-family: CustomTitle;
   color: white;
+  border-radius: 0.4em;
+    border: 0px solid white;
+    color: #045174;
+        padding: 0pt 25pt 3pt 15pt;
+    margin-top: 0.4%;
+    background-color: white;
 }
 #programname{
   float: left;
-  font-size: 20pt;
+  font-size: 50pt;
   padding-left: 10pt;
+    font-family: CustomTitle;
 }
 #copybox{
   display: inline;
-  border-radius: 40pt;
+    border: 1pt solid gray;
+  border-radius: 30pt;
   background-color: lightgray;
   font-family: monospace;
   font-size: 14pt;
   margin-top: 10pt;
+  margin-top: 10pt;
   margin-left: 10pt;
+    padding: 0.2em 0.6em 0.3em 0.6em;
   color:black;
   position: absolute;
+    cursor: pointer;
+    transform: translateY(-0.375em);
 }
-#menu{
+#copybox:hover{
+    padding: 0.3em 0.7em 0.4em 0.7em;
+}
+#menuIcon{
   float:left;
   color: white;
-  font-size: 22;
+  font-size: 32;
+    padding-top: 0.3%;
 }
 #boxes{
+    position: relative;
   clear:both;
   padding-top: 10pt;
   padding-left: 26%;
+    height: 60%;
+    width: 60%;
+    overflow-y: scroll;
+    z-index:0;
+    
+}
+#boxes .{
+    position: relative;
+}
+#boxes div{
+    z-index: 0;
+    position: relative;
+    display: inline-block;
 }
 #boxes label{
   font-family: sans-serif;
+}
+#newChkBoxBackground{
+    display:none;
+    position: absolute;
+    top: 0%; left: 0%;
+    height: 100%; width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    z-index:1;
+    font-family:cursive;
+    font-size: 11pt;
+}
+#newChkBox{
+    display:none;
+    position: absolute;
+    top: 0%; left: 70%;
+    height: 100%; width: 30%;
+    background-color: white;
+    border: 1px solid black;
+    z-index:1;
+    font-family:cursive;
+    font-size: 11pt;
+}
+#newChkBox h2{
+    padding-bottom: 10%;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+#newChkBox input{
+    margin-bottom: 4%;
+    width: 90%;
+    margin-left: 5%;
+    border: 0px solid #045174; border-bottom: 2px solid #045174;
+    height: 2em
+}
+#newChkBox input:hover{
+    border: 0px solid #045174; border-bottom: 3px solid #045174;
+}
+#newChkBox label{
+    margin-left: 5%;
+}
+#newChkBox button{
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: white;
+    color: #045174;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12pt;
+    border-radius: 0.3em;
+    padding: 2% 10% 2% 10%;
+    text-align: center;
+    cursor: pointer;
+    border: 4px;
+}
+#newChkBox #create{
+    margin-top: 5%;
+    margin-left: 35%;
+    background-color: #045174;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12pt;
+    border-radius: 0.3em;
+    padding: 2% 10% 2% 10%;
+    text-align: center;
+    cursor: pointer;
+    border: 4px;
+}
+#newChkBox .exit{
+    font-weight: bolder;
+    border: 0px solid black;
+    background-color: white;
+    width: 5%;
+    margin-left: 5%; margin-top: 4%;
+    padding-left: 1pt;
+    font-size: 20pt;
+    font-family: cursive;
+    cursor: pointer;
+    color: #045174;
+    
+}
+#boxes input[type="checkbox"] {
+    margin-right: 2%;  font: inherit;
+  color: currentColor;
+  width: 1.05em;
+  height: 1.05em;
+  border: 0.05em solid currentColor;
+  border-radius: 0.05em;
+    transform: translateY(0.175em);
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+#boxes button {
+    float: right;
+    margin-right: 10%;
+    border: 1px solid white;
+    background: white;
+    color: darkgrey
+}
+#boxes button:hover{
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-right: 9.7%;
+    color: black
+}
+#menu{
+    text-align: center;
+    display:none;
+    position: absolute;
+    top: 0%; left: 0%;
+    height: 100%; width: 30%;
+    background-color: white;
+    border: 1px solid black;
+    z-index:1;
+    font-family:cursive;
+    font-size: 11pt;
+    color: black;
+    font-family: sans-serif;
+}
+#menu button{
+    margin-top:2%;
+}
+#menuExit{
+    
+    font-weight: bolder;
+    border: 0px solid black;
+    background-color: white;
+    width: 5%;
+    margin-left: 5%; margin-top: 4%;
+    padding-left: 1pt;
+    font-size: 20pt;
+    font-family: cursive;
+    cursor: pointer;
+    color: #045174;
+}
+#menu p{
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+.star {
+    visibility:hidden;
+    cursor:pointer;
+}
+.star:before {
+   content: "\2606";
+    font-size:18pt;
+    color: gold;
+    transform: translateY(-7pt);
+   position: absolute;
+   visibility:visible;
+}
+.star:checked:before {
+   content: "\2605";
+   position: absolute;
 }
