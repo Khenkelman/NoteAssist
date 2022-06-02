@@ -1,248 +1,2860 @@
 [
+  	{
+		"Category": "Telehealth",
+		"Title": "Client Location",
+		"Output": "client plans to use telehealth."
+	},
 	{
 		"Category": "Telehealth",
 		"Title": "Private Location",
-		"Description": "Desc 1",
 		"Output": "client is in a private location."
 	},
   	{
 		"Category": "Telehealth",
+		"Title": "Client Identity",
+		"Output": "client plans to use telehealth."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Telehealth procedure",
+		"Output": "client plans to use telehealth."
+	},
+  	{
+		"Category": "Telehealth",
 		"Title": "Scope of telehealth",
-		"Description": "Desc 1.2",
+		"Output": "client plans to use telehealth."
+	},
+  	{
+		"Category": "Telehealth",
+		"Title": "Risk and limitations",
 		"Output": "client plans to use telehealth."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Satisfactory connection",
-		"Description": "Desc 1.2",
 		"Output": "client is satisfied."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Eye contact reminder",
-		"Description": "On-Time",
 		"Output": "client is constantly being reminded on eye contact."
 	},
   	{
 		"Category": "Telehealth",
-		"Title": "Client Location",
-		"Description": "desc",
+		"Title": "Backup plan",
 		"Output": "client is at home."
 	},
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	{
-		"Category": "Telehealth",
-		"Title": "Unique Tele",
-		"Description": "Desc 1",
-		"Output": "client is in a private location."
+		"Category": "Presentation",
+		"Title": "Affect Tearful",
+		"Output": "tearful affect."
 	},
   	{
-		"Category": "Telehealth",
-		"Title": "Test The Tele",
-		"Description": "Desc 1.2",
-		"Output": "client plans to use telehealth."
+		"Category": "Presentation",
+		"Title": "Mood Irritable",
+		"Output": "irritable mood."
 	},
   	{
-		"Category": "Telehealth",
-		"Title": "Ultimate Testing",
-		"Description": "Desc 1.2",
-		"Output": "client is satisfied."
+		"Category": "Presentation",
+		"Title": "Mood Anxious",
+		"Output": "anxious mood."
 	},
   	{
-		"Category": "Telehealth",
-		"Title": "Consistency",
-		"Description": "On-Time",
-		"Output": "client is constantly being reminded on eye contact."
+		"Category": "Presentation",
+		"Title": "Affect Depressed",
+		"Output": "depressed affect."
 	},
   	{
-		"Category": "Telehealth",
-		"Title": "Client home",
-		"Description": "desc",
-		"Output": "client is at home."
+		"Category": "Presentation",
+		"Title": "Affect Appropriately Reactive",
+		"Output": "appropriately reactive (congruent) to stimulus."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Insight Good",
+		"Output": "good insight."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "All Other Mental Status Normal",
+		"Output": "all other mental status information was considered as normal."
+	},
+  	{
+		"Category": "Presentation",
+		"Title": "Time Late",
+		"Output": "being late to the session."
 	},
 	{
 		"Category": "Presentation",
-		"Title": "Insight Good",
-		"Description": "Has a good insight.",
-		"Output": "Has a good insight."
+		"Title": "Affect Neutral",
+		"Output": "neutral affect."
 	},
   	{
 		"Category": "Presentation",
 		"Title": "Mood Positive",
-		"Description": "Has a positive mood.",
-		"Output": "Has a positive mood."
+		"Output": "positive mood."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Mood Negative",
-		"Description": "Has a negative mood.",
-		"Output": "Has a negative mood."
+		"Title": "Behavior Appropriate",
+		"Output": "appropriate interview behavior."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Tearful",
-		"Description": "Has a positive mood.",
-		"Output": "emotional."
+		"Title": "Psychomotor Agitation",
+		"Output": "psychomotor agitation."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Hostile",
-		"Description": "client is very hostile",
-		"Output": "client is very hostile."
+		"Title": "Intermittent Eye Contact.",
+		"Output": "intermittent eye contact."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Speech Hesitant",
-		"Description": "client is very hostile",
-		"Output": "the client is uncomfortable speaking."
+		"Title": "Affect Flat",
+		"Output": "flat affect."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Dirty",
-		"Description": "client is very hostile",
-		"Output": "the client has a lack of hygiene."
+		"Title": "Appearance Disheveled",
+		"Output": "disheveled appearance."
 	},
   	{
 		"Category": "Presentation",
-		"Title": "Dressed-up",
-		"Description": "client is very hostile",
-		"Output": "the client has is extra dressed up/motivated."
+		"Title": "Insight Fair",
+		"Output": "fair insight."
 	},
 	{
 		"Category": "Presentation",
-		"Title": "Insight Good",
-		"Description": "Has a good insight.",
-		"Output": "Has a good insight."
+		"Title": "Time Early",
+		"Output": "being early to the session."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Mood Positive",
-		"Description": "Has a positive mood.",
-		"Output": "Has a positive mood."
+		"Title": "Thought Preoccupied",
+		"Output": "preoccupied thought content."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Mood Negative",
-		"Description": "Has a negative mood.",
-		"Output": "Has a negative mood."
+		"Title": "Affect Labile",
+		"Output": "labile affect."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Tearful",
-		"Description": "Has a positive mood.",
-		"Output": "emotional."
+		"Title": "Time Severely Late",
+		"Output": "being severely late to the session."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Hostile",
-		"Description": "client is very hostile",
-		"Output": "client is very hostile."
+		"Title": "Speech Soft",
+		"Output": "soft speech."
 	},
-  	{
+	{
+		"Category": "Presentation",
+		"Title": "Thought Disorganized",
+		"Output": "experiencing disorganization in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "All Mental Status Normal",
+		"Output": "all mental status information was considered as normal."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Hostile",
+		"Output": "hostile interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Appearance Emaciated",
+		"Output": "emaciated appearance."
+	},
+	{
 		"Category": "Presentation",
 		"Title": "Speech Hesitant",
-		"Description": "client is very hostile",
-		"Output": "the client is uncomfortable speaking."
+		"Output": "hesitant speech."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Dirty",
-		"Description": "client is very hostile",
-		"Output": "the client has a lack of hygiene."
+		"Title": "Speech Normal",
+		"Output": "normal speech."
 	},
-  	{
+	{
 		"Category": "Presentation",
-		"Title": "Dressed-up",
-		"Description": "client is very hostile",
-		"Output": "the client has is extra dressed up/motivated."
+		"Title": "Orientation Month",
+		"Output": "awareness of the current month."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Flight of Ideas",
+		"Output": "experiencing flight of ideas in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Oriented X4",
+		"Output": "awareness of the current day, month, self, and current location."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Evasive",
+		"Output": "evasive interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Appearance Promiscuous",
+		"Output": "promiscuous appearance."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Affect Constricted",
+		"Output": "constricted affect."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Perseveration",
+		"Output": "experiencing perseveration in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Speech Verbose",
+		"Output": "verbose speech."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Angry",
+		"Output": "angry interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Aggressive",
+		"Output": "aggressive interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Speech Mute",
+		"Output": "limited or no speech (mute)."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Appearance Neat",
+		"Output": "neat appearance."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Loose Associations",
+		"Output": "experiencing loose associations in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Demanding",
+		"Output": "demanding interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Speech Slurred",
+		"Output": "slurred speech."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Mood Euthymic",
+		"Output": "euthymic mood."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Loose Associations",
+		"Output": "experiencing loose associations in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Insight Poor",
+		"Output": "poor insight."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Mood Elavated",
+		"Output": "elevated mood."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Speech Pressured",
+		"Output": "pressured speech."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Delusions",
+		"Output": "thought content with delusions."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Perceptions Hallucinations",
+		"Output": "hallucinatory perceptions."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Irritable",
+		"Output": "irritable interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Speech Stuttering",
+		"Output": "stuttering speech."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Orientation Day",
+		"Output": "awareness of the current day."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Manipulative",
+		"Output": "manipulative interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Orientation Place",
+		"Output": "awareness of the client’s current location."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Withdrawn",
+		"Output": "withdrawn interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Argumentative",
+		"Output": "argumentative interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Uncooperative",
+		"Output": "uncooperative interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Tangential",
+		"Output": "experiencing tangential in thought process."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Orientation Self",
+		"Output": "awareness of the client’s self."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Normal",
+		"Output": "normal thought content."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Thought Blocking",
+		"Output": "experiencing thought blocking."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Perceptions Normal",
+		"Output": "normal perceptions."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Passive",
+		"Output": "passive interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Mood Content",
+		"Output": "content mood."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Behavior Apathetic",
+		"Output": "apathetic interview behavior."
+	},
+	{
+		"Category": "Presentation",
+		"Title": "Appearance Poor Hygience",
+		"Output": "appearance of poor hygiene."
+	},
+    
+    
+    
+    
+	{
+		"Category": "Symptoms",
+		"Title": "Crying",
+		"Output": "crying episodes."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Decision difficulty from disapproval",
+		"Output": "difficulty making own decisions because of lack of self-identity or of fear from disapproval of others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Excessive falling asleep",
+		"Output": "amount of falling asleep or of need to sleep."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Abused emotionally",
+		"Output": "emotional abuse from others towards the client."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hypervigilance",
+		"Output": "amount of hypervigilance or actively looking for threats in life."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Behavior rigidity",
+		"Output": "difficulty in being flexible in routines or in patterns of thought."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Emotional instability",
+		"Output": "emotional instability or inability to regulate affect to spread of negative emotions."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sustained attention impairments",
+		"Output": "impairments in sustained attention in tasks in multiple domains or lack of ability to concentrate."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Indecisiveness",
+		"Output": "amount of indecisiveness and difficulty ability to work out choices."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Maintaining sleep problems",
+		"Output": "difficulties in staying asleep."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Procrastination",
+		"Output": "procrastination or spending time in a way described as “wasteful”."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Orderliness",
+		"Output": "tendency toward keeping possessions or tasks highly ordered and regimented or rigid."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Somatic tension",
+		"Output": "feeling of tension in body or of stiffness."
 	},
 	{
 		"Category": "Symptoms",
 		"Title": "Restlessness",
-		"Description": "Trouble sleeping",
-		"Output": "the client misses out on multiple hours of sleep"
+		"Output": "amount of restlessness and inability to relax."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Traumatic remembering",
+		"Output": "intrusive thoughts, feelings, or memories around traumatic event."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Negative beliefs",
+		"Output": "persistent negative beliefs of self or the world that neglect a fuller understanding."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Parenting difficulties",
+		"Output": "difficulties in parent-child relationship which causes stress."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Depressed feelings",
+		"Output": "amount of depressed mood where feelings consist of sadness, emptiness, loneliness, or hopelessness (depressivity)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Distraction",
+		"Output": "distractibility from appropriate tasks at hand or during conversation."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Initiation sleep troubles",
+		"Output": "difficulty in initiating sleep."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Interpersonal conflicts",
+		"Output": "amount of interpersonal conflicts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Work performance difficulties",
+		"Output": "general difficulties in academic performance abilities and ability to achieve well."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fear of rejection",
+		"Output": "fear of criticism or rejection from others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Social Anxiety",
+		"Output": "amount of fear and anxiety in social situations, whether from potential symptoms coming up or from the events themselves."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Relationship instability",
+		"Output": "instability in interpersonal relationships."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Time management difficulties",
+		"Output": "difficulty in managing time or scattered time issues."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fatigue",
+		"Output": "loss of energy, fatigue, or lethargy in daily life."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Anhedonia",
+		"Output": "negative symptom of decrease in ability to experience pleasure in positive experiences."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Health concerns",
+		"Output": "degree of thoughts, feelings, and behaviors regarding worries or concerns around health-related symptoms."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Irritability",
+		"Output": "amount of irritability, agitation, or petulance."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Feelings of guilt",
+		"Output": "amount of feelings of guilt or shame."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Academic performance difficulties",
+		"Output": "general difficulties in academic or work performance abilities and ability to achieve well."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Distress",
+		"Output": "experience of intense psychological distress."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Feelings of inferiority",
+		"Output": "fear of inferiority in comparison to others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Inconsistent eating",
+		"Output": "eating inconsistently."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Lack of motivation",
+		"Output": "lack of motivation."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Overgeneralizing",
+		"Output": "overgeneralizing"
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Work Difficulties",
+		"Output": "general difficulties in work performance abilities or ability to achieve job satisfaction."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Overthinking",
+		"Output": "amount of overthinking."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Rumination",
+		"Output": "rumination of thoughts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Feelings of Anger",
+		"Output": "feelings of anger."
 	},
 	{
 		"Category": "Symptoms",
 		"Title": "Grief",
-		"Description": "Crying often",
-		"Output": "the client seems to be very upset."
+		"Output": "grief of recent loss."
 	},
 	{
 		"Category": "Symptoms",
-		"Title": "Anger",
-		"Description": "uneasy with temper",
-		"Output": "the client is uneasy with anger."
+		"Title": "Anxiety and Worry",
+		"Output": "amount of anxiety and worry with difficulty to control or manage the worry to succeed in daily life."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Complex Grief",
+		"Output": "sorry and preoccupation with recent loss that is persistent."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fear avoidance",
+		"Output": "levels of avoidance derived from anxiety or fear."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fear of situation",
+		"Output": "amount of fear regarding a specific situation."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Traumatic dreams",
+		"Output": "repetition of thoughts, feelings or situation from traumatic event played out in dreams."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Early morning awakening",
+		"Output": "tendency to wake up far earlier than anticipated in sleep."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Nightmares",
+		"Output": "nightmares."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Feelings of dread",
+		"Output": "feelings of dread induced from thoughts or beliefs that something bad will happen."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Cultural distress",
+		"Output": "distress over racism or cultural discrimination."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hypersomnia",
+		"Output": "signs of hypersomnia (excessive sleepiness)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Social withdrawal",
+		"Output": "preference to be alone or to avoid social connection."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Separation worry",
+		"Output": "amount of worry around losing attachment figures."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Forgetfulness",
+		"Output": "forgetfulness about usual activities so much so that they are insufficiently completed."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Careless mistakes",
+		"Output": "amount of lack of attention to details resulting in careless mistakes."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Traumatic event",
+		"Output": "traumatic event in the client’s life (through experience or learning)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sustained effort avoidance",
+		"Output": "avoidance of tasks that require sustained focus, whether mental, or through time."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction cravings",
+		"Output": "desire to use addictive material."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Lack of work",
+		"Output": "difficulty in finding or maintaining gainful employment."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction",
+		"Output": "difficulty in maintaining control over addictive material use or in reducing consumption or behavior when desired."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Asociality",
+		"Output": "negative symptom of lack of interest in social interaction."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Gastrointestinal problems",
+		"Output": "gastrointestinal problems (e.g. constipation, diarrhea)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Pain",
+		"Output": "moderate amount of pain."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual interest difficulties",
+		"Output": "lack or reduction in sexual interest or arousal or decrease in sexual activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Suicide ideation",
+		"Output": "thoughts of suicide (suicidal ideation)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Traumatic dissociation",
+		"Output": "experiences of a disconnect between perception of reality and authentic reality where the client may relive traumatic experiences."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Memory",
+		"Output": "trouble remembering or in processing memories."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Anxiety of anxiety",
+		"Output": "amount of anxiety of potential anxiety symptoms recurring."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Lightheadedness",
+		"Output": "amount of feeling dizzy or lightheaded."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Abused sexually",
+		"Output": "sexual abuse from others towards the client."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Other gender preferences",
+		"Output": "tendency to desire participation in rolls or activities of other gender."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Easily startled",
+		"Output": "tendency to be startled."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Dry mouth",
+		"Output": "experience of dry mouth."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Avolition",
+		"Output": "negative symptom of decrease in willingness to perform purposeful activities."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Thought obsessions",
+		"Output": "amount of thoughts or impulses that are unwanted which bring distress."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Social communication impairments",
+		"Output": "difficulty in engaging with others or in communicating with others in a social manner."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Superficial self-harm",
+		"Output": "amount of superficial self-harm or self-harm gestures without significant damage (e.g. very minor scrapes)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sensory hyperreactivity",
+		"Output": "hyperreactivity to sensory stimulation and input."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction effects",
+		"Output": "effects from using excessive amounts of specific addictive material that produce undesired or deleterious outcomes or experiences."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Catatonia",
+		"Output": "decrease in reactivity to the environment."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Heart pounding",
+		"Output": "experience of racing heart, palpitations, or odd fluctuations in heartbeat."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction use when distressed",
+		"Output": "tendency to engage in addictive material and behaviors when distressed."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Entitlement",
+		"Output": "tendency to have unreasonable beliefs of self-preferential treatment or entitlement."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Breathing difficulties",
+		"Output": "amount of breathing difficulties or sensation of choking."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hoarding acquisition",
+		"Output": "tendency to accumulate items to an extent which causes social distress or unmanageability in life."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Insomnia",
+		"Output": "signs of insomnia (inability to consistently sleep)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Depersonalization",
+		"Output": "experience of detachment from self whether in mental processes or in body."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Performance ambivalence",
+		"Output": "lack of concern around society activity (i.e. school, work) performance or desire to succeed, even in the face of negative outcomes."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Impaired cognitive function",
+		"Output": "impairments to cognitive functioning and performance."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Argumentative behavior",
+		"Output": "displays of argumentative or defiant behavior with others or with other's rules."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Confusion",
+		"Output": "disorientation and confusion."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Unconsented secual touching behaviors",
+		"Output": "engagement in arousal from exposing genitals to other people"
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Delayed Ejaculation",
+		"Output": "lack or delay in ejaculations in sexual activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Speech repetition",
+		"Output": "repetitions in speech without conscious control such as with syllables or elongated consonants."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sentence structure impaired",
+		"Output": "impairments in the ability to combine words into appropriate, grammatically informed, sentences contrast with comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sleep terrors",
+		"Output": "episodes of fear or terror upon awakening."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction tolerance",
+		"Output": "continued increase in escalating amount of addictive material used to produce previous effects."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual exposure thoughts",
+		"Output": "engagement in arousal from fantasizing about exposing genitals to other people."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual object arousal thoughts",
+		"Output": "engagement in sexual arousal from thoughts of specific, nonsexual objects or body parts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual, nonconsenting touch behaviors",
+		"Output": "engagement in arousal from touching other people in a nonconsenting exchange."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Intent to harm",
+		"Output": "intent to clearly harm an identified other."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Pressured speech",
+		"Output": "pressured speech or more talkative than usual."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hyperactivity in movement",
+		"Output": "hyperactivity in movement."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Disorganized speech",
+		"Output": "unpredictable levels of abnormal, disorganized speech."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Erectile dysfunctions",
+		"Output": "difficulty in obtaining or maintaining an erection during sexual activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Reciprocity Impairments",
+		"Output": "impairments ability to conduct back-and-forth conversations."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Language use impairments",
+		"Output": "impairment in use of language or acquisition of language across multiple domains."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Lack of empathy",
+		"Output": "disregard for the emotions of others or how consequences might affect others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Vocalization tics",
+		"Output": "recurrent and sudden vocalizations."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Deceptiveness around health",
+		"Output": "deceptiveness around physical or psychological health."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Paranoia",
+		"Output": "paranoia and distrust in others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Egocentrism",
+		"Output": "experiences of self with grandiosity and inflated esteem (despite the potential for fragility)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hair pulling",
+		"Output": "amount of hair pulling to an extent which causes physical discomfort or torn hair."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fear of gaining weight",
+		"Output": "fear around gaining weight."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Increase in activity",
+		"Output": "increase in activity whether goal-directed or non-goal-directed."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Premature ejaculation",
+		"Output": "tendency to ejaculate earlier than preferred in sexual activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Cross Dressing",
+		"Output": "preference to dress in the clothes of opposite gender."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Stereotyped or repetitive behaviors",
+		"Output": "display of stereotyped or repetitive behaviors (e.g. repetitive motor movements or repetitive organizing of objects)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Underweight",
+		"Output": "degree of being below appropriate weight for client."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Perseveration or interest fixation",
+		"Output": "adherence to a limited subset of interests (perseveration)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual arousal from crossdressing thoughts",
+		"Output": "engagement in sexual arousal from thoughts around crossdressing."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Bizarre delusions",
+		"Output": "amount and severity of erroneous, persistent, beliefs which are completely implausible that have insufficient evidence and are resistant to change."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Skin picking",
+		"Output": "amount of skin picking to an extent that causes physical discomfort."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Amnesia",
+		"Output": "inability to remember significant memories or details."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Vocabulary reduction",
+		"Output": "reduced or limited vocabulary usage in contrast with comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Gift giving",
+		"Output": "intent of giving gifts to friends, charity, or family and parting of treasured possessions as if to say goodbye."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fear of object",
+		"Output": "amount of fear regarding a specific object."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Repetitive behaviors",
+		"Output": "amount of repetitive behaviors driven by a compulsion to nullify some thought-based obsession."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Compulsive sexual behaviors",
+		"Output": "compulsive behaviors around acquiring sexual gratification."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Grandiose delusions",
+		"Output": "amount and severity of erroneous, persistent, beliefs of grandiosity that have insufficient evidence and are resistant to change."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction health problems",
+		"Output": "health problems which directly stem from addictive material use."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hallucinations",
+		"Output": "erroneous sensory input (hallucinations)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sharing impairments",
+		"Output": "impairments in the ability to share or account for others in a relationship (such as in social play)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Disorganized behavior",
+		"Output": "unpredictable levels of abnormal, disorganized behavior."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Restless legs",
+		"Output": "urge to persistently move legs when relaxing."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Suicidal threats",
+		"Output": "threats of suicide."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Regurgitating food",
+		"Output": "tendency to repeatedly regurgitate food."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Nonfood eating",
+		"Output": "behavior of eating nonfood substances."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addictive life damage",
+		"Output": "damage to quality of life or life roles (i.e. work, relationships, school) as a direct consequence to using addictive material."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Penetration pain",
+		"Output": "pain during vaginal penetration or intercourse."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Speech production impairments",
+		"Output": "difficulty in producing verbal communication in a way that can be understood by others contrast with comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Binge eating",
+		"Output": "severity of binge eating behavior."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Slow written language",
+		"Output": "difficulty in generating, reading, or comprehension of written language in contrast with comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Diminished emotional expression",
+		"Output": "negative symptom of diminished emotional expression in presentation."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Labile affect",
+		"Output": "changes in affect (labile)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Verbal aggression",
+		"Output": "amount of escalation into verbal aggressiveness and other auditory expressions of anger."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Echolalia",
+		"Output": "repetition in vocal utterings (echolalia)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual children actions",
+		"Output": "engagement in sexual behaviors with children."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction life avoidance",
+		"Output": "neglect of other basic roles in life (i.e. work, social, school, domestic responsibilities) because of seeking access to or engaging in addictive material."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Abused psychologically",
+		"Output": "psychological abuse from others towards the client."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Illness concerns",
+		"Output": "concern around having or acquiring potential illness in the absence of actual symptoms."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Decreased need for sleep",
+		"Output": "lack of need for sleep."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Suicidal means",
+		"Output": "accessibility to means of suicide."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Persecutory delusions",
+		"Output": "amount and severity of erroneous, persistent, beliefs that others will do harm to self that have insufficient evidence and are resistant to change."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Bed or clothing wetting",
+		"Output": "amount of bedwetting or urinating into clothing."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Grandiose beliefs",
+		"Output": "tendency to identify with grandiose beliefs that may even be fanciful."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual pain behaviors",
+		"Output": "engagement in arousal from performing pain or humiliation with other people in a sexual exchange."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Vindictive behavior",
+		"Output": "amount of vindictiveness and mean behavior towards others that impacts others negatively."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Suicide history",
+		"Output": "history of suicide attempts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Food avoidance",
+		"Output": "tendency to avoid food or lack of interest in eating."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Separation distress",
+		"Output": "amount of distress when separating from attachment figures."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual, nonconsenting touch thoughts",
+		"Output": "engagement in arousal from fantasizing about touching other people sexual in a nonconsenting exchange."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Inappropriate defecation",
+		"Output": "amount of defecating in inappropriate places."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Delayed orgasm",
+		"Output": "lack or delay in orgasm during sexual activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual pain thoughts",
+		"Output": "engagement in arousal from fantasizing about pain or humiliation."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Movement tics",
+		"Output": "recurrent and rapid motor movements."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Physical aggression on objects",
+		"Output": "amount of escalation into physical aggressiveness on objects or property in an expression of anger."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Over-weeklong elevated mood",
+		"Output": "elevated mood with increase in energy and activity that has been mostly present at least a week."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Addiction acquisition efforts",
+		"Output": "investment of time and resources in acquiring addictive material or in seeking out addictive material."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Risky behaviors",
+		"Output": "increase in risky behaviors that may have undesirable consequences."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Odd beliefs",
+		"Output": "propensity for superstitious or magical thinking and other odd beliefs that are not congruent with culture which displays a lack of lucidity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual object behaviors",
+		"Output": "engagement in sexual arousal from behaviors around specific, nonsexual objects or body parts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual arousal from crossdressing behaviors",
+		"Output": "engagement in sexual arousal from crossdressing."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Hoarding discarding problems",
+		"Output": "inability to discard possessions to an extent which causes social distress or unmanageability in life."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Coordination difficulties",
+		"Output": "difficulties in coordination and being able to complete motor movements."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Body concerns",
+		"Output": "amount of concern around specific areas of physical appearance which are generally unnoticeable."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Mutism",
+		"Output": "reduction in verbal responses, being unable to speak, or reduction in speech."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Neglected",
+		"Output": "neglect from an important other that deprived the client of sufficient resources."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Derealization",
+		"Output": "experience of derealization or depersonalization where there is a disconnect of detachment from experiential reality."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Nonverbal cues impairments",
+		"Output": "difficulty in interpreting or displaying nonverbal cues (body language) in a way that is typical for comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Social detachment",
+		"Output": "detachment or interest in social relationships."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Elevated mood",
+		"Output": "elevated mood with increase in energy and activity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Weight loss",
+		"Output": "weight loss recently without intention."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Perfectionism",
+		"Output": "propensity to desire perfection in performance or a single way of doing things."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Weight gain",
+		"Output": "weight gain recently without intention."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Comfort withdrawal",
+		"Output": "lack of seeking comfort or able to be soothed when comforted."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Weight gain prevention",
+		"Output": "amount of compulsions to avoid gaining weight that are harmful or excessive."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Intellectual functioning impairments",
+		"Output": "impairments in intellectual functions (e.g. planning, reasoning, learning, thinking) in contrast to comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Irresponsibility",
+		"Output": "tendency towards carelessness or lack of responsibility with those placed in one's care."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Racing thoughts",
+		"Output": "presence of flight-of-ideas or racing of thoughts."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Goal distortions",
+		"Output": "tendency to be unable to achieve goals or setting of unrealistic goals (self-direction distortions)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Fire setting",
+		"Output": "pleasure or arousal from deliberate fire setting."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Excessive talking",
+		"Output": "excessive talking out of turn in contrast to comparable others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Letter writing",
+		"Output": "intent of writing of letters to friends or family members as if to say goodbye."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Nighttime breathing difficulties",
+		"Output": "nocturnal difficulties in breathing."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Exploitative",
+		"Output": "tendency to take advantage of others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual observing thoughts",
+		"Output": "engagement in arousal from fantasizing about observing other people in private activities."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Temper outbursts",
+		"Output": "amount of temper outbursts, either verbally or physically."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Overly friendly",
+		"Output": "pattern of being overly friendly, to an inappropriate extent, with others in a way inconsistent with normative others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual interest in children",
+		"Output": "engagement in sexual arousal around fantasies regarding children."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Decreased speech",
+		"Output": "negative symptom of decrease in vocalization and speech (alogia)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Observing arousal behaviors",
+		"Output": "engagement in arousal from observing other people in private activities."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Suicide plan",
+		"Output": "thoughts of suicide plan."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sensory hyporeactivity",
+		"Output": "hyporeactivity to sensory stimulation and input."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Lack of remorse",
+		"Output": "lack of remorse of the consequences of actions of rule breaking or in harm of someone else."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Multiple personalities",
+		"Output": "amount of distinctive personality states."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Intimidation",
+		"Output": "degree of bullying and using intimidation and threats of violence on others."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "General delusions",
+		"Output": "amount and severity of erroneous, persistent, beliefs that have insufficient evidence and are resistant to change."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Persistent sexual thoughts",
+		"Output": "amount of thoughts or fantasies of a sexual nature."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Inflated self-esteem",
+		"Output": "increase self-esteem and grandiosity."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sleepwalking",
+		"Output": "tendency to sleepwalk or other activities while asleep or without full consciousness."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Rule breaking",
+		"Output": "degree of breaking societal rules."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Weight misperception",
+		"Output": "misperceptions around body's weight, size, shape, or look."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Inadequate resources",
+		"Output": "lack of resources (i.e. access to nutrition or housing)."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Self-harm",
+		"Output": "degree of self-harm."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Physical aggression on people",
+		"Output": "amount of escalation into physical aggressiveness (violence) on people in an expression of anger."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Attention seeking",
+		"Output": "tendency to desire to be the center of attention with behaviors to that effect."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Sexual activity increase",
+		"Output": "increase in flirtation or sexual activity which may be risky."
+	},
+	{
+		"Category": "Symptoms",
+		"Title": "Identity diffusion",
+		"Output": "challenges in maintaining clear boundaries between self and other people which diffuses identity and emotional experience."
+	},
+    
+    
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Diagnoses",
+		"Title": "Anxiety",
+		"Output": "anxiety disorders."
 	},
 	{
 		"Category": "Diagnoses",
-		"Title": "this diagnoses",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Depressive",
+		"Output": "depressive disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Trauma and Stressor",
+		"Output": "trauma and stressor related disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "ADHD",
+		"Output": "ADHD."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Alcohol",
+		"Output": "Alcohol-Use Disorder."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Bipolar",
+		"Output": "bipolar and related disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Medication induced",
+		"Output": "medication induced disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Other conditions",
+		"Output": "other conditions of clinical importance."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Other mental",
+		"Output": "other mental disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Gender Dysphoria",
+		"Output": "gender dysphoria."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Elimination",
+		"Output": "elimination disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Dissociative",
+		"Output": "dissociative disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Paraphilic",
+		"Output": "paraphilic disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Sexual",
+		"Output": "sexual dysfunctions."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Psychotic",
+		"Output": "psychotic disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Feeding and Eating",
+		"Output": "feeding and eating disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Sleep-Wake",
+		"Output": "sleep-wake disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Substance and Addiction",
+		"Output": "substance related and addictive disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Neurocognitive",
+		"Output": "neurocognitive disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Neurodevelopmental",
+		"Output": "neurodevelopmental disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Personality",
+		"Output": "personality disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Obsessive-Compulsive",
+		"Output": "obsessive compulsive and related disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Disruptive and Impulse and Conduct",
+		"Output": "disruptive, impulse-control, and conduct disorders."
+	},
+	{
+		"Category": "Diagnoses",
+		"Title": "Somatic Symptom",
+		"Output": "somatic symptom and related disorders."
+	},
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Disruption",
+		"Title": "Leisure Activities",
+		"Output": "Client's ability to engage in leisure activities."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "General Wellbeing",
+		"Output": "disruption to the client's general sense of wellbeing and mental health in a way that the client can provide for self and dependent others."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Romantic Relationship",
+		"Output": "disruption to the client's satisfaction from or ability to engage in romantic relationships."
 	},
 	{
 		"Category": "Disruption",
 		"Title": "School",
-		"Description": "at school",
-		"Output": "Client is affected at school."
+		"Output": "disruption to the client's satisfaction or productivity in client's function at school."
 	},
 	{
 		"Category": "Disruption",
 		"Title": "Family",
-		"Description": "around family",
-		"Output": "Client is affected around direct family"
+		"Output": "disruption to the client's satisfaction and stability in family life and connection."
 	},
 	{
 		"Category": "Disruption",
-		"Title": "Home",
-		"Description": "at home",
-		"Output": "Client is affected at home."
+		"Title": "Work",
+		"Output": "disruption to the client's satisfaction or productivity in client's function at work."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Social Connections",
+		"Output": "moderate disruption to the client's ability to engage and/or derive satisfaction from social connections."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Sense of Meaning",
+		"Output": "disruption to the client's sense of meaning from life."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Exploration",
+		"Output": "disruption to the client's ability to explore in life and to creatively overcome obstacles."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Economic",
+		"Output": "disruption to the client's financial stability."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Daily Tasks",
+		"Output": "disruption to the client's ability to perform daily necessary tasks for life."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Environment",
+		"Output": "disruption to the client's physical environment and ability to safely access shelter and basic needs."
+	},
+	{
+		"Category": "Disruption",
+		"Title": "Spiritual",
+		"Output": "disruption to the client's satisfaction and connection to spiritual life."
+	},
+    
+    
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Safety",
+		"Title": "Passive Ideation",
+		"Output": "client has had passive ideation about harming self."
 	},
 	{
 		"Category": "Safety",
-		"Title": "this diagnoses",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "History",
+		"Output": "client has a history of harming self."
+	},
+	{
+		"Category": "Safety",
+		"Title": "Safe",
+		"Output": "there are no concerns for the client’s safety at this time."
+	},
+	{
+		"Category": "Safety",
+		"Title": "Plan",
+		"Output": "client has a meaningful plan for how to significantly harm self."
+	},
+	{
+		"Category": "Safety",
+		"Title": "School",
+		"Output": "disruption to the client's satisfaction or productivity in client's function at school."
+	},
+	{
+		"Category": "Safety",
+		"Title": "Other harm",
+		"Output": "client has intent to harm another, identifiable person."
+	},
+	{
+		"Category": "Safety",
+		"Title": "Means",
+		"Output": "client has the means to harm self."
+	},
+	{
+		"Category": "Safety",
+		"Title": "Intent",
+		"Output": "client has the intent to harm self."
+	},
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Topics",
+		"Title": "Current managing behaviors",
+		"Output": "client’s current actions and behaviors around symptom management."
 	},
 	{
 		"Category": "Topics",
-		"Title": "this topic",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Symptoms effect",
+		"Output": "further discussion of the client’s symptoms and their effects."
 	},
 	{
-		"Category": "Stage",
-		"Title": "this Stage",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Category": "Topics",
+		"Title": "Familial relationships",
+		"Output": "symptoms influence on familial relationships."
+	},
+	{
+		"Category": "Topics",
+		"Title": "General wellbeing",
+		"Output": "symptoms influence on general wellbeing."
+	},
+	{
+		"Category": "Topics",
+		"Title": "Romantic relationships",
+		"Output": "symptoms influence on client’s romantic relationships."
+	},
+	{
+		"Category": "Topics",
+		"Title": "Career",
+		"Output": "symptoms influence on work and career endeavors."
+	},
+	{
+		"Category": "Topics",
+		"Title": "Relationships",
+		"Output": "symptoms influence the client’s relationships."
+	},
+	{
+		"Category": "Topics",
+		"Title": "Social history",
+		"Output": "influence of the client’s symptoms in the client’s social history."
+	},
+	{
+		"Category": "Topics",
+		"Title": "Daily living",
+		"Output": "symptoms influence on daily living capabilities."
+	},
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Interventions",
+		"Title": "Rational and emotional balance",
+		"Output": "psychoeducation and practice around experience in balancing rational and emotional states."
 	},
 	{
 		"Category": "Interventions",
-		"Title": "this Interventions",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Healthy deescalation",
+		"Output": "planning and reviewing healthy methods of avoiding or leaving to de-escalate."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Mindfulness and meditation",
+		"Output": "psychoeducation about mindfulness and meditation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Alternative actions",
+		"Output": "identifying alternative actions that would improve the client’s situation to relieve symptoms and committing to those behaviors."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "'I' statements",
+		"Output": "practicing utilizing self-descriptive statements (“I” statements)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Treatment plan creation",
+		"Output": "creating the treatment plan with the client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-care",
+		"Output": "planning and reviewing self-care activities."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Detecting transformation",
+		"Output": "detecting transformation and progress in the client’s effort and work."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Affirmation",
+		"Output": "using affirmation to establish therapeutic connection."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Replacing defeating language",
+		"Output": "helping the client to replace self-defeating language in the client’s thoughts (e.g. replacing should)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Actions feelings thoughts",
+		"Output": "exploring connections between actions, emotions, and cognitions (thoughts or beliefs)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-affirmations",
+		"Output": "planning and reviewing self-affirming thoughts and statements."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Asking eliciting questions",
+		"Output": "asking eliciting questions that highlight desired behavior or outcome."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reflecting affect",
+		"Output": "validating emotional experience by reflecting affect."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Inviting reflection",
+		"Output": "inviting reflection on the experience and helping integration into new self-concept."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Providing behavioral tasks",
+		"Output": "providing the client with behavioral tasks that explore desired behavior."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Non-judgement",
+		"Output": "promoting dialectical acceptance to avoid judgement while also changing harmful behaviors."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Mental distraction",
+		"Output": "planning and reviewing healthy methods of mental distraction."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Summarizing",
+		"Output": "summarizing the client’s views, particularly on contradicting information."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reducing pressure",
+		"Output": "reducing pressure on defenses in the relationship and allow feelings or beliefs to have space."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring relationship needs",
+		"Output": "exploring needs in communication from self and others to create a mutual balance in relationship."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Identifying cognitive distortions",
+		"Output": "working to the client to identify cognitive distortions preventing adaptive cognitions."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring cognitive distortions",
+		"Output": "exploring cognitive distortions that the client utilizes for maladaptive thoughts."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Needs communication",
+		"Output": "psychoeducation and practicing on communication techniques to fulfill needs in a respectful manner."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-compassion",
+		"Output": "using mindfulness to enhance self-compassion."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Expressing empathy",
+		"Output": "expressing empathy for the client and exploring client’s situation without judgement."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring emotional reactions",
+		"Output": "exploring how the client’s symptoms manifest from reactions to emotions."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Emotion description",
+		"Output": "supporting and facilitating emotion descriptions."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Neurology psychoeducation",
+		"Output": "psychoeducation around the brain (neurology) and what happens in relation to client’s symptoms inside the brain and body (physiology)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Identifying positive coping",
+		"Output": "identifying positive coping mechanisms and defining their benefits."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Providing verbal rewards",
+		"Output": "providing verbal rewards and compliments to the client’s capacity, competency, and character."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reflective listening",
+		"Output": "using reflective listening."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Psychoeducation about sleep",
+		"Output": "psychoeducation around sleep benefits and advantageous habits for promoting high quality sleep."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Psychoeducation of diagnosis",
+		"Output": "providing psychoeducation around diagnosis."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Loving-Kindness Meditation",
+		"Output": "led client in Loving-Kindness Meditation to enhance self-compassion and compassion for others."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Inner Critic Education",
+		"Output": "exploring the inner critic and providing education on the origin and nature of the inner critic."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Neuropathway Education",
+		"Output": "providing psychoeducation around nature of neuropathways."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Define values",
+		"Output": "defined values important to client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Sitting with discomfort meditation",
+		"Output": "sitting with discomfort meditation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Metta",
+		"Output": "guiding the client though Metta meditation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "ACEs Education",
+		"Output": "Education on adverse childhood experiences scale."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Body communication",
+		"Output": "using the body as a vehicle for communication with integration between thoughts, emotions, physical sensations, and physical signs."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-talk",
+		"Output": "engaging self to provide insight to client parts."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Meditative focusing",
+		"Output": "practicing meditative focusing exercises."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Treatment plan reviewing",
+		"Output": "reviewing and updating the treatment plan with the client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Breathing exercises",
+		"Output": "psychoeducation and practicing meditative breathing exercises."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "EMDR Body Scanning",
+		"Output": "scanning the body for residual disturbances with processing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Float Back",
+		"Output": "having the client float back through their memories to activate sensations or images."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "EMDR Psychoeducation",
+		"Output": "provided the client psychoeducation on emdr process and theory."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Breathing awareness",
+		"Output": "using breathing to aid in noticing bodily sensations and feelings."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Session Closure",
+		"Output": "providing client with cognitive distancing tactics to regulate emotional state for session closure."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Normalizing",
+		"Output": "normalizing concern over changing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "EMDR Relaxation",
+		"Output": "reviewing guided emdr relaxation techniques."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Activity distraction",
+		"Output": "planning and reviewing healthy methods of activity distraction."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Containment Visualizations",
+		"Output": "guiding the client through containment visualizations."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Relaxing Visualizations",
+		"Output": "using visualizations to tolerate distress."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-soothing",
+		"Output": "planning and reviewing self-soothing and relaxation mechanisms."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "SUDS After",
+		"Output": "."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Comforting Atmosphere",
+		"Output": "provided a comfortable atmosphere for client and helped client acclimate to the space."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Prevents positive communication",
+		"Output": "identifying styles of communication that prevent positive communication."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Emotional awareness",
+		"Output": "promoting emotional awareness with records or feeling evaluations."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Bilateral Processing",
+		"Output": "engaging client in bilateral processing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Desensitization Processing",
+		"Output": "guiding client through desensitizing bilateral processing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Cultural Assessment",
+		"Output": "gathered information around relevant parts of client’s cultural and ethnic background as pertaining to clinically relevant matters."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Making space",
+		"Output": "inviting the client to make space for feelings."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Incorporating physical emotions",
+		"Output": "observing the way emotions act in a physical way and inviting those emotions into the dyadic experience."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Eliciting change confidence",
+		"Output": "observing change results to promote change."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Experiential metaprocess",
+		"Output": "processing experience of feelings in the relationship and the experience."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "EMDR Target Assessment",
+		"Output": "identifying the target and initial client responses to target."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring part desires",
+		"Output": "exploring part desires for client and its role in those desires."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "SUDS Before",
+		"Output": "."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Identifying new roles",
+		"Output": "identifying new roles for parts in healing process."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Rapport Building",
+		"Output": "used suitable client engagement interventions (activities, humor, questions, self-disclosure, or affirmation) to build rapport with client ."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring parts worry",
+		"Output": "exploring fears or worries that managing parts have around internal discussion."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Interweaves",
+		"Output": "using interweaves to aid cognitive reprocessing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Outcome or progress rating",
+		"Output": "evaluating with the client the progress towards desired outcome."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Collected Biopsychosocial Data",
+		"Output": "collected relevant biopsychosocial data from client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Self-disclosure",
+		"Output": "using self-disclosure to generate safety in the relationship."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Parts exploration",
+		"Output": "exploring parts and their relationships to other parts and triggering events."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Identifying polarization",
+		"Output": "identifying polarized parts in conflict and inviting discussion."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reevaluating Processed Targets",
+		"Output": "."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Psychoeducation of distortions",
+		"Output": "providing psychoeducation around cognitive distortions."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Accepting responsibility",
+		"Output": "helping client to take responsibility for symptoms and accepting necessary change to alleviate symptoms."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Role play behaviors",
+		"Output": "role playing experimental behaviors or enactments."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Assessing change readiness",
+		"Output": "assessing a client’s readiness for or confidence to change with scales."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Assertiveness scripts",
+		"Output": "creating letters or scripts for healthy relationship assertiveness."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Retrieving from past",
+		"Output": "retrieving harmed parts from the past and intervening through visualization."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Eliciting alternative thoughts",
+		"Output": "eliciting opposing, alternative, or more realistic thoughts for the client to gain a different perspective."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Allowing acceptance",
+		"Output": "a focus on allowing some acceptance of the symptoms to grow."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Eliciting change talk",
+		"Output": "eliciting conversation around perceptions of change in client’s life."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Effective communication tool",
+		"Output": "working through an effective, interpersonal communication tool (facts, feelings, beliefs, needs, ramifications)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Satisfying life plan",
+		"Output": "building commitment for a satisfying life."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Exploring advantages of problem",
+		"Output": "exploring the advantages, benefits, and core beliefs in problematic behavior or feeling."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Asking detail questions",
+		"Output": "asking clarifying details that highlight desired behavior or outcome during the undesired behavior or outcome."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to niche expert",
+		"Output": "recommending referral to a niche expert for specific symptoms."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Session Rating",
+		"Output": "asking the client questions that rate the quality of the session."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Feeling state release",
+		"Output": "providing guided vizualization of feeling state release following protocol."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Schema assessmnet provision",
+		"Output": "explaining and providing a schema assessment questionnaire to the client to identify schema modes."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "schema assessmnet reviewing",
+		"Output": "reviewing schema assessment questionnaire and processing with client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Incorporating spiritual strength",
+		"Output": "enabling connection to a higher power or spiritual life to create strength."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to 211",
+		"Output": "recommending 211 as a resource for help."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Audio Relaxation",
+		"Output": "practicing guided audio relaxation techniques."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Identifying negative coping",
+		"Output": "identifying negative coping mechanisms and defining their risks."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Downward thought stepping",
+		"Output": "processing superficial thoughts with downward stepping to find underlying core beliefs (i.e. if that were true, then what)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Direct accessing",
+		"Output": "directly talking with client parts."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Relationship risk assessments",
+		"Output": "creating relationship risk assessments."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Counting symptoms",
+		"Output": "prescribing intervention of counting the number of negative thoughts or repetitious, symptomatic behaviors."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Event cascade analysis",
+		"Output": "using framework of vulnerabilities, triggers, thoughts, feelings, behaviors, and outcomes."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Feeling or thought records",
+		"Output": "assigning record keeping as homework to help the client identify emotions or cognitions."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Interviewed Outside Resource",
+		"Output": "interviewed client’s outside resource on details relevant to client care and symptomology."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reviewed Therapeutic Boundaries",
+		"Output": "reviewed therapeutic boundaries with client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Provided Assessment",
+		"Output": "provided client with assessment that helps to distinguish client’s symptomology (see attached assessment)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Room technique",
+		"Output": "finding space in the room for a part to be secured."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to medical doctor",
+		"Output": "recommending referral to a medical doctor for medical evaluation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Radical acceptance",
+		"Output": "educating and utilizing radical acceptance or coping beliefs."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Pain and trauma release",
+		"Output": "providing guided vizualization of trauma or pain release following protocol."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Unburdening",
+		"Output": "allowing part to unburden its traumatic components."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "History Assessment",
+		"Output": "asked client questions that helped to clarify client’s historical situation in relationship to symptomology."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to financial",
+		"Output": "Recommending referral of a financial resource for financial planning."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Confrontation",
+		"Output": "confronting the client to face issues important to the client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "EMDR History Planning",
+		"Output": "processing with client through emdr relevant history and treatment goals."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Role play fears",
+		"Output": "role playing the clients fears in a fictitious environment."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Skill records",
+		"Output": "assigning records keeping for skill use monitoring."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Visualizing unfinished business",
+		"Output": "completing unfinished business by visualizing providing closure."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Behavior records",
+		"Output": "assigning behavior records to help the client identify maladaptive strategies used that perpetuate symptomology."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Schema needs education",
+		"Output": "providing education around unmet supportive needs that established schema mode and developing history."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Asking permission for information",
+		"Output": "asking permission for information (psychoeducation) disclosure."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Definitions of labels",
+		"Output": "generating a definition of a label and exposing its fallacy."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Schema antithesis",
+		"Output": "discussing actions and beliefs contrary to the schema mode."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Thought survey",
+		"Output": "surveying or imagining surveying others for more realistic thoughts."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Negotiation techniques",
+		"Output": "psychoeducation negotiation techniques for effective communication."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Parts listening",
+		"Output": "providing discussion and insight to client while parts observe."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Thought dispersal",
+		"Output": "practicing thought dispersal and allowing thoughts to dissipate."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Assigning probabilities",
+		"Output": "assigning probabilities to thoughts or outcomes."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Labeling defenses",
+		"Output": "labeling and invoking recognition of defenses in the dyadic relationship."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Positive Cognition Installation",
+		"Output": "guiding client through bilateral processing to enhance positive cognition."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Observing behavior discrepancies",
+		"Output": "observing and providing awareness to behavior and belief discrepancies."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Parts model introduction",
+		"Output": "introducing client to the therapeutic model utilizing parts and gaging suitability for parts model."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Script playing",
+		"Output": "writing a script."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Parts permission",
+		"Output": "receiving permission from concerned parts for next stages of treatment or for intervention."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to insurance",
+		"Output": "recommending referral to insurance for other resources."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Observation point change",
+		"Output": "asking questions that help to change the clients viewing perspective (observation point or point of view)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Dyadic visualization",
+		"Output": "allowing visualization to take place in the dyadic experience."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reversing aloneness",
+		"Output": "reversing the clients felt aloneness by pointing out shared space."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Desensitization Processing",
+		"Output": "guiding client through desensitizing bilateral processing."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Asking competency 'how' questions",
+		"Output": "focusing on the internal “how” of client’s innate competency."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Part containment",
+		"Output": "using part containment or distancing exercises to not overwhelm client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Schema noticing",
+		"Output": "noticing schema mode activation in the session."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Schema role play",
+		"Output": "role playing the schema activation in the session."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Mutual agenda",
+		"Output": "creating a mutual agenda for the session focusing on the most impactful elements for the client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Assessing differentiation",
+		"Output": "accessing the level of differentiation between parts and self."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Evaluating session questions",
+		"Output": "receiving client evaluation of the session."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Image deconstruction",
+		"Output": "providing guided vizualization of deconstruction of emotionally charged image following protocol."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Opposite actions",
+		"Output": "opposite actions, practicing opposite actions from emotional urges first cognitively and then in practice."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Analyzing evidence",
+		"Output": "helping the client to analyzing and weigh the evidence in support of maladaptive and adaptive beliefs."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to psychiatrist",
+		"Output": "recommending referral to a psychiatrist for psychiatric evaluation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Symptom records",
+		"Output": "assigning record keeping as homework to help the client identify symptoms and their surrounding context."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Addressing confusion",
+		"Output": "addressing and pointing out avoidance of internal confusion within the client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Fostering same direction orientation",
+		"Output": "fostering same direction orientation where client and therapist work together."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Providing observational tasks",
+		"Output": "providing the client with observational tasks to focus on desired behavior and improvements."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Reviewed Assessment",
+		"Output": "reviewed and explained relevant assessment results with client."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Using parts language",
+		"Output": "describing client symptoms and problems using parts language."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Goal formation",
+		"Output": "constructing and formulating goals for the client of desired behavior and outcome."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Session reflection",
+		"Output": "asking the client questions that rate the quality of the session."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Listening techniques",
+		"Output": "psychoeducation and practicing around appropriate listening techniques (and listening blocks)."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Cost-benefit analysis",
+		"Output": "creating a cost benefit analysis of thoughts and beliefs."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Socratic method",
+		"Output": "asking a series of questions to unveil clients own experience and knowledge in a Socratic manner."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Role play thoughts",
+		"Output": "externalizing negative voices as to create separation and providing role play to see multiple views."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Psychoeducation of feelings",
+		"Output": "providing psychoeducation around the variety and strength of feelings or emotions and their relationship to thoughts."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Analyzing negative assessments",
+		"Output": "creating a thought record of negative thoughts and assessments and distinguishing them from more helpful forms of thinking."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Open ended questions",
+		"Output": "using open ended questions to elicit more information."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Referral to book resource",
+		"Output": "recommending literature for the client to read or work through around symptomology."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Empty chair",
+		"Output": "using empty chair dialogue having the client speak from internal split sides."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Paradoxical assertions",
+		"Output": "asserting a paradox about change or suggesting halting to elicit motivation."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Goal persuing brainstorming",
+		"Output": "asking questions that encourage brainstorming of actions that move toward goal."
+	},
+	{
+		"Category": "Interventions",
+		"Title": "Future self-inspiration",
+		"Output": "asking questions that focus on future self or elicit advice from future self."
+	},
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Response",
+		"Title": "Engaged",
+		"Output": "engagement during the session."
 	},
 	{
 		"Category": "Response",
-		"Title": "this Response",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Positive",
+		"Output": "positive reactions in general."
+	},
+	{
+		"Category": "Response",
+		"Title": "Enthusiasm",
+		"Output": "enthusiasm in treatment methods."
+	},
+	{
+		"Category": "Response",
+		"Title": "High motivation",
+		"Output": "high motivation for interventions."
+	},
+	{
+		"Category": "Response",
+		"Title": "Low motivation",
+		"Output": "low motivation for interventions."
+	},
+	{
+		"Category": "Response",
+		"Title": "Hesitant",
+		"Output": "hesitancy and limited engagement."
+	},
+	{
+		"Category": "Response",
+		"Title": "Dissociation",
+		"Output": "dissociation during the session."
+	},
+	{
+		"Category": "Response",
+		"Title": "Negative",
+		"Output": "negative reactions in general."
+	},
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Strengths",
+		"Title": "Understanding self",
+		"Output": "aptitude for understanding self."
 	},
 	{
 		"Category": "Strengths",
-		"Title": "this Strengths",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Positive coping",
+		"Output": "developed positive coping techniques."
 	},
 	{
-		"Category": "Progress",
-		"Title": "this Progress",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Category": "Strengths",
+		"Title": "Compassion for others",
+		"Output": "can feel compassion for other people."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Ask for help",
+		"Output": "willing to be vulnerable and ask for help from others at critical times."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Positive behaviors",
+		"Output": "being open to trying new, positive behaviors."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Emotional expression",
+		"Output": "able to express emotions."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Negative coping honesty",
+		"Output": "awareness and honesty around negative coping techniques."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Motivated",
+		"Output": "motivated for progress of treatment."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Emotional awareness",
+		"Output": "significant awareness of emotions."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Take constructive feedback",
+		"Output": "able to receive constructive feedback from therapist without cycling into shame."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Understanding others",
+		"Output": "aptitude for understanding others."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Positive relationships",
+		"Output": "seeking positive relationships."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Tolerate painful feelings",
+		"Output": "able to tolerate painful feelings."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Take positive feedback",
+		"Output": "able to receive positive feedback from therapist."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Compassion for self",
+		"Output": "can feel compassion for self."
+	},
+	{
+		"Category": "Strengths",
+		"Title": "Setting treatment goals",
+		"Output": "awareness, ability, and desire to set realistic goals for treatment."
+	},
+    
+    
+    
+    
+    
+    
+    
+	{
+		"Category": "Tasks",
+		"Title": "Seek referrals",
+		"Output": "searching for referrals that will apply to the client’s situation."
 	},
 	{
 		"Category": "Tasks",
-		"Title": "this Tasks",
-		"Description": "vitae mauris sit amet lorem semper auctor. Mauris vel turpis.",
-		"Output": "the client found this solution"
+		"Title": "Seek resources",
+		"Output": "searching for resources inherent to client care."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Client advocacy",
+		"Output": "spending time advocating on client’s behalf."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Research",
+		"Output": "researching material to provide better client care."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Treatment plan revision",
+		"Output": "updating the treatment plan to reflect current condition, goals, and interventions."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Consult",
+		"Output": "consulting with other professions to provide the highest quality care."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Phone follow up",
+		"Output": "following up with the client before the next session to assess client’s status."
+	},
+	{
+		"Category": "Tasks",
+		"Title": "Contact guardians",
+		"Output": "contacting the client’s guardians for continued case formulation and treatment."
 	}
 ]
