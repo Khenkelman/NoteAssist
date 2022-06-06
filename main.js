@@ -1,8 +1,8 @@
 
 ///// DECLARE UNIVERSAL VARIABLES /////
 var categories = ["Telehealth", "Presentation", "Symptoms", "Diagnoses", "Disruption", "Safety", "Topics", "Interventions", "Response", "Strengths", "Tasks"];
-var categoryQuestions = ["Is the client suitable for telehealth?", "What was the client's presentation in the session?", "What symptoms has the client experienced since the last session?", "These symptoms are consistent within ____ disorders.", "How much do these symptoms disrupt the client's life?", "How would you describe the client's safety status?", "What general topics were discussed in the session?", "What are you doing (interventions) with the client to work towards client's goals?", "How did the client receive the session?", "What strengths did the client display in the session?", "What steps will the therapist take in relationship to the treatment progress?"  ]
-var categoryStatement = ["Important information for the support of telehealth includes:", "The client's presentation to the session included:", "The client's symptomology since the last session included:", "These symptoms are consistent with:", "From the client's report and therapist observations, these symptoms disrupt the client's life to an extent of:", "The client's current safety status is:", "The general topics covered in the session included:", "The client and the therapist worked towards the client's goals with interventions such as:", "The client's observable reaction to these interventions included:", "The client displayed strengths and capabilities during the session of:", "Actions the therapist will take before the next session, or soon, include:"]
+var categoryQuestions = ["Is the client suitable for telehealth?", "What was the client's presentation in the session?", "What symptoms has the client experienced since the last session?", "These symptoms are consistent within ____ disorders.", "How much do these symptoms disrupt the client's life?", "How would you describe the client's safety status?", "What general topics were discussed in the session?", "What are you doing (interventions) with the client to work towards client's goals?", "How did the client receive the session?", "What strengths did the client display in the session?", "What steps will the therapist take in relationship to the treatment progress?"  ];
+var categoryStatement = ["Important information for the support of telehealth includes:", "The client's presentation to the session included:", "The client's symptomology since the last session included:", "These symptoms are consistent with:", "From the client's report and therapist observations, these symptoms disrupt the client's life to an extent of:", "The client's current safety status is:", "The general topics covered in the session included:", "The client and the therapist worked towards the client's goals with interventions such as:", "The client's observable reaction to these interventions included:", "The client displayed strengths and capabilities during the session of:", "Actions the therapist will take before the next session, or soon, include:"];
 
 var ChkBoxes = {};
 
@@ -23,7 +23,7 @@ if (!localFilePage) { var categoryCurrent = 0; } else { var categoryCurrent = lo
 
 ///// SET TEXT BOX == LOCALSTORAGE VALUE /////
 ///                                       ///
-if (localTextBox) { document.getElementById('copiedDiv').innerHTML = localTextBox  }
+if (localTextBox) { document.getElementById('copiedDiv').innerHTML = localTextBox;  }
 
 
 ///// SET TEXT BOX == LOCALSTORAGE VALUE /////
@@ -33,7 +33,7 @@ if (!localStarChecked) { var checkedStars = ""; } else { var checkedStars = loca
 
 
 // IF LOCAL FILE EMPTY, ASSIGN VALUE 0 //
-if(!localFileChecked) { var checkedBoxes = " " } else { var checkedBoxes = localFileChecked }
+if (!localFileChecked) { var checkedBoxes = " "; } else { var checkedBoxes = localFileChecked; }
 
 
 
@@ -42,8 +42,6 @@ if(!localFileChecked) { var checkedBoxes = " " } else { var checkedBoxes = local
 
 // FILLS IN EACH CHECK BOX //
 FillInChkBoxes();
-selectCheckBoxes();
-selectStarBoxes();
 
 ///// CALL FUNCTIONS /////
 updateTitles();
@@ -68,6 +66,13 @@ function CountNumObjects(val){
 /////   LOCALFILE INTO CHECKBOXES     //////
 function FillInChkBoxes() {
 
+    localFileChecked = window.localStorage.getItem('checkedBoxes');
+    localFileObject = JSON.parse(window.localStorage.getItem('localChkBoxes'));
+    localFilePage = window.localStorage.getItem('currentPage');
+    localStarChecked = window.localStorage.getItem('checkedStars');
+    localTextBox = window.localStorage.getItem('textBox');
+
+    
     var checkedArray = []
     // GETS LOCALFILE CHECKED STARS // 
     if(localStarChecked) { checkedArray = localStarChecked.split(',').map(Number);}
@@ -80,8 +85,9 @@ function FillInChkBoxes() {
     var result = "";
 
     for (var i = 1; i<= numObjects; i++){
-        result += '<div id="d' + i +'"class="' + localFileObject[i].Category + '"><input type="checkbox" class="check" id="' + i + '" value="' + localFileObject[i].Output+'" onclick=BoxInteraction("' + i + '")><label for="' + localFileObject[i].Title + '">'
-        result += localFileObject[i].Title + '</label><input type="checkbox" class="star" id="s' + i + '" onclick=StarClick()><button class="btn" id="' + i + '">X</button></div>'
+        result += '<div id="d' + i +'"class="' + localFileObject[i].Category + '"><span class="tooltiptext">"' + localFileObject[i].Output+ '"</span><input type="checkbox" class="check" id="' + i + '" value="' + localFileObject[i].Output+'" onclick=BoxInteraction("' + i + '")><label for="' + localFileObject[i].Title + '">'
+        result += localFileObject[i].Title + '</label><input type="checkbox" class="star" id="s' + i + '" onclick=StarClick()><button onclick=DeleteCheckbox('
+        result += ('"' + i + '") class=btn id="' + i + '">X</button></div>')
     }
     
     // CREATES CHECKBOXES ON SCREEN //
@@ -105,7 +111,10 @@ function FillInChkBoxes() {
         // HAS STARRED ITEMS LISTED FIRST //
         document.getElementById('boxes').innerHTML = test2 + result;
     }
+    
     // HIDES CHECKBOXES ON DIFFERENT SCREEN //
+    selectCheckBoxes()
+    selectStarBoxes()
     HideChkBoxes()
 } 
 
@@ -143,13 +152,14 @@ function HideChkBoxes() {
 //// CHECKS EACH Star THAT WAS PREVIOUSLY CHECKED ////
 function selectStarBoxes() {
 
+    localStarChecked = window.localStorage.getItem('checkedStars');
+    
     // FINDS EACH CHECKBOX //
     var boxesDiv = document.getElementById('boxes');
     var starBoxes = boxesDiv.getElementsByClassName('star');
-
-
     // GETS ARRAY FROM CHECKEDBOXES //
-    var checkedArray = checkedStars.split(',');
+    if (localStarChecked){var checkedArray = localStarChecked.split(',');} else {checkedArray=""}
+    
     // FOR EACH CHECKBOX THAT MATCHES, SELECT IT //
     for (var z = 0; z < starBoxes.length; z++){
         for(var y = 0; y <= checkedArray.length; y++)
@@ -170,20 +180,22 @@ function selectStarBoxes() {
 //// CHECKS EACH BOX THAT WAS PREVIOUSLY CHECKED ////
 function selectCheckBoxes(){
 
+    checkedBoxes = window.localStorage.getItem('checkedBoxes');
     // FINDS EACH CHECKBOX //
     var boxesDiv = document.getElementById('boxes');
     var checkboxes = boxesDiv.getElementsByTagName('input');
+    if (checkedBoxes){
+        // GETS ARRAY FROM CHECKEDBOXES //
+        var checkedArray = checkedBoxes.split(',').map(Number);
 
-    // GETS ARRAY FROM CHECKEDBOXES //
-    var checkedArray = checkedBoxes.split(',').map(Number);
-
-    // FOR EACH CHECKBOX THAT MATCHES, SELECT IT //
-    for(var z = 0; z < checkboxes.length; z++){
-        for(var y = 0; y < checkedArray.length; y++)
-        {
-            if (checkboxes[z].id == checkedArray[y])
+        // FOR EACH CHECKBOX THAT MATCHES, SELECT IT //
+        for(var z = 0; z < checkboxes.length; z++){
+            for(var y = 0; y < checkedArray.length; y++)
             {
-                checkboxes[z].checked = true;
+                if (checkboxes[z].id == checkedArray[y])
+                {
+                    checkboxes[z].checked = true;
+                }
             }
         }
     }    
@@ -290,9 +302,12 @@ document.getElementById("copybox").onclick = function() {
     // COPY STRING TO CLIPBOARD //
     //    ADDS BOLDED STRING    //
     copyToClipboard(categoryBoxesString)
+    document.getElementById("copybox").innerHTML = "&#10064; Copied"
+    setTimeout(ChangeCopyLabel, 1000)
 }
-
-
+function ChangeCopyLabel(){
+    document.getElementById("copybox").innerHTML = "&#10063; Copy"
+}
 
 
 
@@ -359,104 +374,9 @@ document.getElementById("create").onclick = function() {
     window.localStorage.setItem('currentPage', categoryCurrent)
     window.localStorage.setItem('localChkBoxes', JSON.stringify(localFileObject));
     // FILLS IN CHECK BOXES WITH NEW VALUE //
-    location.reload();
+    FillInChkBoxes()
 }
         
-
-
-
-
-///////// DELETE CHECKBOX ////////
-
-// FIND EACH BUTTON //
-var buttons = document.getElementsByClassName("btn");
-
-//////      FOR EACH BUTTON    //////
-////// CREATE ONCLICK FUNCTION //////
-for (var i=0; i < buttons.length; i++){
-    buttons[i].onclick = function(i){
-
-        var confirmAction = confirm("Are you sure you want to delete this option forever?");
-        if (confirmAction) {
-            // CREATES CUSTOM OBJECT //
-            const customFileObject = {};
-
-            // CREATE LIST OF CHECKED BOXES //
-            var checkedBoxes = []
-
-            // GETS LOCALFILE OBJECT // 
-            //var localFileObject = JSON.parse(window.localStorage.getItem('localChkBoxes'));
-
-            // COUNT LENGTH OF OBJECT //
-            var count = 0;
-            for (properties in localFileObject) {
-                count = count + 1
-            }
-
-            // FILLS IN NEW CUSTOM OBJECT //
-            for(var x = 1; x <= count; x++){
-                if (x < i.target.id){customFileObject[x] = localFileObject[x]}
-                if (x > i.target.id){customFileObject[x-1] = localFileObject[x]}
-            }
-
-            // FINDS WHICH CHECKBOX IS SELECTED //
-            //      ASSIGNS VALUES TO ARRAY     //
-
-            // FINDS EACH CHECKBOX //
-            var boxesDiv = document.getElementById('boxes');
-            var checkboxes = boxesDiv.getElementsByClassName('check');
-
-            // FOR EACH CHECKBOX //
-            for(var z = 0; z < checkboxes.length; z++){
-
-                // IF IT IS CHECKED //
-                if (checkboxes[z].checked)
-                {
-                    // IF IT LESS THAN ITEM ERASED  //
-                    // ASSIGN VALUE TO CHECKEDBOXES //
-                    if (parseInt(checkboxes[z].id) < parseInt(i.target.id))
-                    {checkedBoxes.push(checkboxes[z].id)}
-
-
-                    // IF IT MORE THAN ITEM ERASED     //
-                    // ASSIGN VALUE - 1 TO CHECKEDBOXES//
-                    else if (parseInt(checkboxes[z].id) > parseInt(i.target.id))
-                    { 
-                        checkedBoxes.push((parseInt(checkboxes[z].id) - 1))}
-                }
-            }
-
-            // COPY FROM TEXT BOX //
-            SetTextboxLocalStorageValue()
-
-            // TESTING
-            var checkedStarBoxes = []
-            // FINDS EACH CHECKBOX //
-            var starBoxes = boxesDiv.getElementsByClassName('star')
-            // FOR EACH STARBOX //
-            for(x=0; x<starBoxes.length; x++){ 
-                if (starBoxes[x].checked && parseInt(starBoxes[x].id.replace("s", "")) < i.target.id){
-                    checkedStarBoxes.push(starBoxes[x].id.replace("s", ""))
-                } else if (starBoxes[x].checked && parseInt(starBoxes[x].id.replace("s", "")) > i.target.id){
-                    checkedStarBoxes.push(parseInt(starBoxes[x].id.replace("s", "") - 1))
-                }
-            }
-            // SETS LOCALSTORAGE BEFORE RELOAD //
-            window.localStorage.setItem('checkedBoxes', checkedBoxes)
-            window.localStorage.setItem('checkedStars', checkedStarBoxes)
-            window.localStorage.setItem('currentPage', categoryCurrent)
-            window.localStorage.setItem('localChkBoxes', JSON.stringify(customFileObject));
-
-            // RELOADS PAGE //
-            location.reload();
-        }
-    }
-}
-
-
-
-
-
 
 
 
@@ -512,7 +432,82 @@ xhttp.send();
 
 
 
+function DeleteCheckbox(i){
+    var confirmAction = confirm("Are you sure you want to delete this option forever?");
+    if (confirmAction) {
+        // CREATES CUSTOM OBJECT //
+        var customFileObject = {};
 
+        // CREATE LIST OF CHECKED BOXES //
+        var checkedBoxes = []
+
+        localFileChecked = window.localStorage.getItem('checkedBoxes');
+        
+        // COUNT LENGTH OF OBJECT //
+        var count = 0;
+        for (properties in localFileObject) {
+            count = count + 1
+        }
+
+        // FILLS IN NEW CUSTOM OBJECT //
+        for(var y = 1; y <= count; y++){
+            if (y < i){customFileObject[y] = localFileObject[y]}
+            if (y > i){customFileObject[y-1] = localFileObject[y]}
+        }
+
+        // FINDS WHICH CHECKBOX IS SELECTED //
+        //      ASSIGNS VALUES TO ARRAY     //
+
+        // FINDS EACH CHECKBOX //
+        var boxesDiv = document.getElementById('boxes');
+        var checkboxes = boxesDiv.getElementsByClassName('check');
+
+        // FOR EACH CHECKBOX //
+        for(var z = 0; z < checkboxes.length; z++){
+
+            // IF IT IS CHECKED //
+            if (checkboxes[z].checked)
+            {
+                // IF IT LESS THAN ITEM ERASED  //
+                // ASSIGN VALUE TO CHECKEDBOXES //
+                if (parseInt(checkboxes[z].id) < parseInt(i))
+                {checkedBoxes.push(checkboxes[z].id)}
+
+
+                // IF IT MORE THAN ITEM ERASED     //
+                // ASSIGN VALUE - 1 TO CHECKEDBOXES//
+                else if (parseInt(checkboxes[z].id) > parseInt(i))
+                { 
+                    checkedBoxes.push((parseInt(checkboxes[z].id) - 1))}
+            }
+        }
+        // COPY FROM TEXT BOX //
+        SetTextboxLocalStorageValue()
+
+        // TESTING
+        var checkedStarBoxes = []
+        // FINDS EACH CHECKBOX //
+        var starBoxes = boxesDiv.getElementsByClassName('star')
+        // FOR EACH STARBOX //
+        for(x=0; x<starBoxes.length; x++){ 
+            if (starBoxes[x].checked && parseInt(starBoxes[x].id.replace("s", "")) < i){
+                checkedStarBoxes.push(starBoxes[x].id.replace("s", ""))
+            } else if (starBoxes[x].checked && parseInt(starBoxes[x].id.replace("s", "")) > i){
+                checkedStarBoxes.push(parseInt(starBoxes[x].id.replace("s", "") - 1))
+            }
+        }
+        // SETS LOCALSTORAGE BEFORE RELOAD //
+        window.localStorage.setItem('checkedBoxes', checkedBoxes)
+        window.localStorage.setItem('checkedStars', checkedStarBoxes)
+        window.localStorage.setItem('currentPage', categoryCurrent)
+        window.localStorage.setItem('localChkBoxes', JSON.stringify(customFileObject));
+
+        document.getElementById("searchbox").value = "";
+        // RELOADS PAGE //
+        //location.reload();
+        FillInChkBoxes();
+        }
+}
 
 ////// Check Box Select //////
 //////  Copy Text Over  //////
@@ -536,6 +531,7 @@ function BoxInteraction(x){
         }
     }
     ShowTextCategories();
+    SetCheckboxLocalStorageValue();
 }
 
 
@@ -589,7 +585,7 @@ function StarClick(){
     SetCheckboxLocalStorageValue()
     SetTextboxLocalStorageValue()
     SetPageLocalStorageValue()
-    location.reload();
+    FillInChkBoxes()
 }
 
     
@@ -612,7 +608,7 @@ function SetCheckboxLocalStorageValue(){
     var checkedBoxes = []
     var boxesDiv = document.getElementById('boxes');
     var checkBoxes = boxesDiv.getElementsByClassName('check')
-    // FOR EACH STARBOX //
+    // FOR EACH CHECKBOX //
     for(x=0; x<checkBoxes.length; x++){ 
         if (checkBoxes[x].checked){
             checkedBoxes.push(checkBoxes[x].id)

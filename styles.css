@@ -166,6 +166,11 @@ h3 {
     margin-top: 0.4%;
     background-color: white;
 }
+#newnote:hover{
+    font-size:28pt;
+    margin-top: 0.1%;
+  margin-right: 15pt;
+}
 #programname{
   float: left;
   font-size: 50pt;
@@ -382,5 +387,44 @@ h3 {
    content: "\2605";
    position: absolute;
 }
-#TelehealthBox{
+
+/* Tooltip text */
+#boxes div .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #045174;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+    font-size: 10pt;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 2%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+#boxes div .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 28%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #045174 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#boxes div:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
