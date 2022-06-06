@@ -1,48 +1,48 @@
 [
   	{
 		"Category": "Telehealth",
-		"Title": "Client Location",
-		"Output": "client plans to use telehealth."
+		"Title": "Client at Home",
+		"Output": "client is at home."
 	},
 	{
 		"Category": "Telehealth",
 		"Title": "Private Location",
-		"Output": "client is in a private location."
+		"Output": "client is satisfied with the level of privacy of current environment."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Client Identity",
-		"Output": "client plans to use telehealth."
+		"Output": "client's identity has been established."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Telehealth procedure",
-		"Output": "client plans to use telehealth."
+		"Output": "client is aware of how the telehealth appointment will proceed."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Scope of telehealth",
-		"Output": "client plans to use telehealth."
+		"Output": "client fits within therapist's scope for telehealth."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Risk and limitations",
-		"Output": "client plans to use telehealth."
+		"Output": "client is aware of the risk and limitations of telehealth."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Satisfactory connection",
-		"Output": "client is satisfied."
+		"Output": "suitable electronic connection has been established."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Eye contact reminder",
-		"Output": "client is constantly being reminded on eye contact."
+		"Output": "reminder given that eye contact is sometimes difficult to achieve via telehealth, but that therapist is still listening."
 	},
   	{
 		"Category": "Telehealth",
 		"Title": "Backup plan",
-		"Output": "client is at home."
+		"Output": "agreement to a communication back up plan if connection fails."
 	},
     
     
