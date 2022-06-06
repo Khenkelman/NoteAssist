@@ -1,21 +1,20 @@
 
 ///// DECLARE UNIVERSAL VARIABLES /////
-const categories = ["Telehealth","Presentation","Symptoms","Diagnoses","Disruption","Safety","Topics","Stage","Interventions","Response","Strengths","Progress","Tasks"];
+var categories = ["Telehealth", "Presentation", "Symptoms", "Diagnoses", "Disruption", "Safety", "Topics", "Interventions", "Response", "Strengths", "Tasks"];
+var categoryQuestions = ["Is the client suitable for telehealth?", "What was the client's presentation in the session?", "What symptoms has the client experienced since the last session?", "These symptoms are consistent within ____ disorders.", "How much do these symptoms disrupt the client's life?", "How would you describe the client's safety status?", "What general topics were discussed in the session?", "What are you doing (interventions) with the client to work towards client's goals?", "How did the client receive the session?", "What strengths did the client display in the session?", "What steps will the therapist take in relationship to the treatment progress?"  ]
+var categoryStatement = ["Important information for the support of telehealth includes:", "The client's presentation to the session included:", "The client's symptomology since the last session included:", "These symptoms are consistent with:", "From the client's report and therapist observations, these symptoms disrupt the client's life to an extent of:", "The client's current safety status is:", "The general topics covered in the session included:", "The client and the therapist worked towards the client's goals with interventions such as:", "The client's observable reaction to these interventions included:", "The client displayed strengths and capabilities during the session of:", "Actions the therapist will take before the next session, or soon, include:"]
 
 var localFilePage = window.localStorage.getItem('currentPage');
 ///// SET CURRENT PAGE == LOCALSTORAGE VALUE /////
 ///                             (OR 0)         ///
-if(!localFilePage){ var categoryCurrent = 0 }
-else{ var categoryCurrent = localFilePage }
+if (!localFilePage) { var categoryCurrent = 0; } else { var categoryCurrent = localFilePage; }
 
 
 var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+xhttp.onreadystatechange = function () {
+    if (this.readyState === 3 && this.status === 200) {
 
-    /*############## /////  MAIN  ////// ###############*/   
-        
-        
+    /*############## /////  MAIN  ////// ###############*/
         
         // GETS LOCALFILE OBJECTS // 
         var localFileObject = JSON.parse(window.localStorage.getItem('localChkBoxes'));
@@ -28,15 +27,16 @@ xhttp.onreadystatechange = function() {
         
         ///// SET CURRENT PAGE == LOCALSTORAGE VALUE /////
         ///                             (OR 0)         ///
-        if(!localFilePage){ categoryCurrent = 0 }
-        else{ categoryCurrent = localFilePage }
+        if (!localFilePage) { categoryCurrent = 0; } else { categoryCurrent = localFilePage; }
         
         
         ///// SET TEXT BOX == LOCALSTORAGE VALUE /////
         ///                     (OR EMPTY)         ///
-        if(!localTextBox){ var textHolder = "" }
-        else { var textHolder = localTextBox}
-        document.getElementById("copiedtext").innerHTML = localTextBox
+        if (!localTextBox) { var textHolder = document.getElementById("copiedDiv").innerHTML; } 
+        else {textHolder = localTextBox }
+        
+        //document.getElementById("copiedtext").outerHTML = textHolder;
+        document.getElementById('copiedDiv').innerHTML = textHolder
         
         // FILLS IN EACH CHECK BOX //
         FillInTxtBoxes();
@@ -45,6 +45,7 @@ xhttp.onreadystatechange = function() {
         
         ///// CALL FUNCTIONS /////
         updateTitles();
+        ShowTextCategories();
         
         
         
@@ -54,21 +55,20 @@ xhttp.onreadystatechange = function() {
         
         //////      PULLS VALUE FROM LOCALSTORAGE       /////
         //// CHECKS EACH Star THAT WAS PREVIOUSLY CHECKED ////
-        function selectStarBoxes(){
+        function selectStarBoxes() {
     
             // IF LOCAL FILE EMPTY, ASSIGN VALUE 0 //
-            if(!localStarChecked) { var checkedStars = "" }
-            else{ var checkedStars = localStarChecked }
+            if (!localStarChecked) { var checkedStars = ""; } else { var checkedStars = localStarChecked; }
             
             // FINDS EACH CHECKBOX //
             var boxesDiv = document.getElementById('boxes');
-            var starBoxes = boxesDiv.getElementsByClassName('star')
+            var starBoxes = boxesDiv.getElementsByClassName('star');
             
             
             // GETS ARRAY FROM CHECKEDBOXES //
-            var checkedArray = checkedStars.split(',')
+            var checkedArray = checkedStars.split(',');
             // FOR EACH CHECKBOX THAT MATCHES, SELECT IT //
-            for(var z = 0; z < starBoxes.length; z++){
+            for (var z = 0; z < starBoxes.length; z++){
                 for(var y = 0; y <= checkedArray.length; y++)
                 {
                     if (((starBoxes[z].id).replace("s","")) == checkedArray.at(y))
@@ -126,15 +126,14 @@ xhttp.onreadystatechange = function() {
             while(i--){ cleanData[i] = cleanData[i].replace(/"/g,""); }
 
             // CREATE OBJECT FOR EACH JSON SEGMENT /
-            const ChkBoxes = {};
+            var ChkBoxes = {};
             var u = 1;
             for(var i = 1; u < cleanData.length; i++){
                 ChkBoxes[i] = new Object();
                 ChkBoxes[i].Category = cleanData[u];
                 ChkBoxes[i].Title = cleanData[u + 2];
-                ChkBoxes[i].Description = cleanData[u + 4];
-                ChkBoxes[i].Output = cleanData[u + 6];
-                u += 8;
+                ChkBoxes[i].Output = cleanData[u + 4];
+                u += 6;
             }
 
             //  SETS LOCAL STORAGE == NEW OBJECT //
@@ -240,8 +239,9 @@ xhttp.onreadystatechange = function() {
         ////// UPDATES HTML TITLES = CURRENT CATEGORY //////
         function updateTitles(){
             var categoryCurrentString = categories[categoryCurrent]
-            document.getElementById("categoryLarge").innerHTML= categoryCurrentString;
+            document.getElementById("categoryLarge").innerHTML= categories[categoryCurrent]
             document.getElementById("searchtitle").innerHTML= ("Search " + categoryCurrentString);
+            document.getElementById("descriptorParagraph").innerHTML=categoryQuestions[categoryCurrent]
         }
         
         
@@ -313,7 +313,6 @@ xhttp.onreadystatechange = function() {
             localFileObject[numObjects+1] = new Object();
             localFileObject[numObjects+1].Category = categories[categoryCurrent];
             localFileObject[numObjects+1].Title = textInput;
-            localFileObject[numObjects+1].Description = descriptionInput;
             localFileObject[numObjects+1].Output = descriptionInput;
             
             // UPDATES LOCAL STORAGE //
@@ -372,7 +371,7 @@ xhttp.onreadystatechange = function() {
         ////// INCREASE CURRENT CATEGORY //////
         ///////         (ARROW)         ///////
         document.getElementById("arrow2").onclick = function() {
-            if (categoryCurrent >= 0 && categoryCurrent < categories.length) {
+            if (categoryCurrent >= 0 && categoryCurrent < (categories.length-1)) {
                     categoryCurrent++
                 document.getElementById("searchbox").value = "";
                 HideChkBoxes();
@@ -384,8 +383,26 @@ xhttp.onreadystatechange = function() {
         
         //////  COPY BUTTON  //////
         document.getElementById("copybox").onclick = function() {
-          textHolder = document.getElementById('copiedtext');
-          textHolder.select();
+          //textHolder = document.getElementById('copiedtext');
+          //textHolder.select();
+            var copiedDiv = document.getElementById('copiedDiv')
+            var categoryBoxes = copiedDiv.getElementsByTagName('div')
+            var categoryBoxesString = ""
+            for (x=0;x<categoryBoxes.length;x++){
+                console.log(categoryBoxes[x].innerHTML)
+                if ((categoryBoxes[x].outerHTML).includes("display: block")){
+                    var addedString = categoryBoxes[x].innerHTML
+                categoryBoxesString = categoryBoxesString + addedString
+                }
+                
+            }
+            //categoryBoxesString = categoryBoxesString.replaceAll("<b>","")
+            //categoryBoxesString = categoryBoxesString.replaceAll("</b>","")
+            
+            copyToClipboard(categoryBoxesString)
+            
+            //console.log(textHolder)
+            //alert(textHolder)
           document.execCommand("copy");
         }
         
@@ -399,6 +416,7 @@ xhttp.onreadystatechange = function() {
                 window.localStorage.removeItem("localFilePage");
                 window.localStorage.removeItem("checkedBoxes");
                 window.localStorage.removeItem("textBox");
+                
                 
                 // RELOADS PAGE //
                 location.reload();
@@ -418,7 +436,7 @@ xhttp.onreadystatechange = function() {
         for (var i=0; i < buttons.length; i++){
             buttons[i].onclick = function(i){
                 
-                let confirmAction = confirm("Are you sure you want to delete this option forever?");
+                var confirmAction = confirm("Are you sure you want to delete this option forever?");
                 if (confirmAction) {
                     // CREATES CUSTOM OBJECT //
                     const customFileObject = {};
@@ -469,7 +487,7 @@ xhttp.onreadystatechange = function() {
                     }
 
                     // COPY FROM TEXT BOX //
-                    textHolder = document.getElementById('copiedtext').innerHTML;
+                    SetTextboxLocalStorageValue()
                     
                     // TESTING
                     var checkedStarBoxes = []
@@ -491,7 +509,6 @@ xhttp.onreadystatechange = function() {
                     window.localStorage.setItem('checkedStars', checkedStarBoxes)
                     window.localStorage.setItem('currentPage', categoryCurrent)
                     window.localStorage.setItem('localChkBoxes', JSON.stringify(customFileObject));
-                    window.localStorage.setItem('textBox', textHolder)
 
                     // RELOADS PAGE //
                     location.reload();
@@ -513,19 +530,26 @@ xhttp.send();
 //////  Copy Text Over  //////
 function BoxInteraction(x){
     
-    var result = document.getElementById("copiedtext").innerHTML
-    
     // Gets Local Object File // 
     var localFileObject = JSON.parse(window.localStorage.getItem('localChkBoxes'));
-    
     // If checkbox = checked, set result = output //
     if (document.getElementById(x).checked){ 
-        result = result + " " + localFileObject[x].Output;
+        for(y=0; y<categories.length; y++){
+            if (localFileObject[x].Category == categories[y]){
+                var selectedCategoryBox = document.getElementById(categories[y] + "Box")
+                selectedCategoryBox.innerHTML = selectedCategoryBox.innerHTML + " " + localFileObject[x].Output
+            }
+        }
     }
     else{
-        result = result.replace((" " + localFileObject[x].Output),'')
+        for(y=0; y<categories.length; y++){
+            if (localFileObject[x].Category == categories[y]){
+                var selectedCategoryBox = document.getElementById(categories[y] + "Box")
+                selectedCategoryBox.innerHTML = selectedCategoryBox.innerHTML.replace((" " + localFileObject[x].Output),'')
+            }
+        }
     }
-    document.getElementById("copiedtext").innerHTML = result
+    ShowTextCategories();
 }
 
 
@@ -557,6 +581,22 @@ function SearchUpdate(){
     }
 }
 
+
+
+function ShowTextCategories(){
+    for(x=0;x<categories.length;x++){
+        var test = ((document.getElementById(categories[x]+"Box").innerHTML).replace("<b>" + categoryStatement[x] + "</b>", ""))
+        test = test.replaceAll("<br>", "")
+        if (test.length === 0){
+            document.getElementById(categories[x]+"Box").style.display = "none"
+        }else{
+            document.getElementById(categories[x]+"Box").style.display = "block"
+        }
+    }
+}
+
+
+
 function StarClick(){
     SetStarLocalStorageValue()
     SetCheckboxLocalStorageValue()
@@ -574,7 +614,6 @@ function SetStarLocalStorageValue(){
     // FOR EACH STARBOX //
     for(x=0; x<starBoxes.length; x++){ 
         if (starBoxes[x].checked){
-            console.log(starBoxes[x].id)
             checkedStarBoxes.push(starBoxes[x].id.replace("s", ""))
         }
     }
@@ -599,7 +638,7 @@ function SetCheckboxLocalStorageValue(){
 
 function SetTextboxLocalStorageValue(){
     // GETS STRING FROM TEXTBOX //
-    textHolder = document.getElementById("copiedtext").innerHTML
+    textHolder = document.getElementById("copiedDiv").innerHTML
     window.localStorage.setItem('textBox', textHolder)
 }
 
@@ -607,4 +646,40 @@ function SetPageLocalStorageValue(){
     var localFilePage = window.localStorage.getItem('currentPage');
         window.localStorage.setItem('currentPage', categoryCurrent)
     
+}
+function copyToClipboard(text) {
+    // Create container for the HTML
+    var dummy = document.createElement("div");
+    dummy.innerHTML = text
+    // to avoid breaking orgain page when copying more words
+    // cant copy when adding below this code
+    // dummy.style.display = 'none'
+      dummy.style.position = 'fixed'
+      dummy.style.pointerEvents = 'none'
+      dummy.style.opacity = 0
+    
+     // Detect all style sheets of the page
+    var activeSheets = Array.prototype.slice.call(document.styleSheets)
+    .filter(function (sheet) {
+        return !sheet.disabled
+    })
+    // Mount the container to the DOM to make `contentWindow` available
+    document.body.appendChild(dummy);
+        
+    
+    // Copy to clipboard
+    window.getSelection().removeAllRanges()
+    var range = document.createRange()
+    range.selectNode(dummy)
+    window.getSelection().addRange(range)
+        
+    document.execCommand('copy')
+        
+    for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = true
+        
+    document.execCommand('copy')
+        
+    for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = false
+        
+    document.body.removeChild(dummy)  
 }

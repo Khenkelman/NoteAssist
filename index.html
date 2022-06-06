@@ -1,3 +1,4 @@
+
 <html>
     <link rel="stylesheet" href="styles.css">  
     
@@ -23,7 +24,7 @@
     <div class=leftcol>
         <!-- Question Asked-->
         <div id=question>
-            <p id='descriptorParagraph'></p>
+            <p id='descriptorParagraph'>This is a test</p>
         </div>
 
         <!-- Search Bar -->
@@ -59,10 +60,22 @@
     
     <div class=rightcol>
         <div id=textbox>
-
-            <!--Turning this into a button break everything and idk why-->
-            <button id="copybox">&#10063; Copy</button> 
-            <textarea id=copiedtext></textarea>
+            <button id="copybox">&#10063; Copy</button><br>
+            <div id=copiedDiv>
+                <div style="display:none;"id=TelehealthBox contenteditable><b>Important information for the support of telehealth includes:</b></div>
+                <div style="display:none;"id=PresentationBox contenteditable><b>The client's presentation to the session included:</b></div>
+                <div style="display:none;"id=SymptomsBox contenteditable><b>The client's symptomology since the last session included:</b></div>
+                <div style="display:none;"id=DiagnosesBox contenteditable><b>These symptoms are consistent with:</b></div>
+                <div style="display:none;"id=DisruptionBox contenteditable><b>From the client's report and therapist observations, these symptoms disrupt the client's life to an extent of:</b></div>
+                <div style="display:none;"id=SafetyBox contenteditable><b>The client's current safety status is:</b></div>
+                <div style="display:none;"id=TopicsBox contenteditable><b>The general topics covered in the session included:</b></div>
+                <div style="display:none;"id=InterventionsBox contenteditable><b>The client and the therapist worked towards the client's goals with interventions such as:</b></div>
+                <div style="display:none;"id=ResponseBox contenteditable><b>The client's observable reaction to these interventions included:</b></div>
+                <div style="display:none;"id=StrengthsBox contenteditable><b>The client displayed strengths and capabilities during the session of:</b></div>
+                <div style="display:none;"id=TasksBox contenteditable><b>Actions the therapist will take before the next session, or soon, include:</b></div>
+            </div>
+            <textarea id=copiedtext>
+            </textarea>
             
         </div>
             <div id=newChkBox>

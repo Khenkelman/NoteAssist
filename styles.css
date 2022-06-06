@@ -2,6 +2,10 @@
     font-family:"CustomTitle";
     src:url("Signatra.ttf")
 }
+@font-face{
+    font-family:"Alata";
+    src:url("Alata-Regular.ttf")
+}
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -23,7 +27,7 @@ header {
 }
 label {
     font-size: 12pt;
-    font-family: cursive;
+    font-family: alata,sans-serif;
 }
 h3 {
   margin-top: 1%;
@@ -44,8 +48,8 @@ h3 {
     
 }
 #question {
-  font-family: sans-serif;
-  font-size: 10pt;
+    font-family: alata,sans-serif;
+  font-size: 12pt;
   text-align: center;
   margin-bottom: 20pt; 
 }
@@ -121,14 +125,17 @@ h3 {
   border: none;
   position:relative;
   overflow-y:auto;
-  font-size: 15px;
-  font-family: sans-serif;
+  font-size: 12pt;
+    font-family: alata,sans-serif;
     padding: 0% 3% 3% 3%;
 }
 #copiedtext:focus{
     outline: none;
     border:0px solid red;
     
+}
+#copiedDiv span{
+    font-weight: bold;
 }
 #addCircle{
   position: fixed;
@@ -165,6 +172,10 @@ h3 {
   padding-left: 10pt;
     font-family: CustomTitle;
 }
+#textbox div{
+    font-family: alata,sans-serif;
+    margin-left: 3%;
+}
 #copybox{
   display: inline;
     border: 1pt solid gray;
@@ -172,12 +183,12 @@ h3 {
   background-color: lightgray;
   font-family: monospace;
   font-size: 14pt;
-  margin-top: 10pt;
-  margin-top: 10pt;
+  margin-bottom: 10pt;
   margin-left: 10pt;
+  margin-top: 10pt;
     padding: 0.2em 0.6em 0.3em 0.6em;
   color:black;
-  position: absolute;
+  position: relative;
     cursor: pointer;
     transform: translateY(-0.375em);
 }
@@ -205,12 +216,14 @@ h3 {
     position: relative;
 }
 #boxes div{
+    padding-bottom: 3px;
     z-index: 0;
     position: relative;
     display: inline-block;
 }
 #boxes label{
-  font-family: sans-serif;
+  font-family: Alata,sans-serif;
+    font-size: 11pt;
 }
 #newChkBoxBackground{
     display:none;
@@ -368,4 +381,6 @@ h3 {
 .star:checked:before {
    content: "\2605";
    position: absolute;
+}
+#TelehealthBox{
 }
