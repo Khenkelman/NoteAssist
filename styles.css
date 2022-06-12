@@ -7,99 +7,107 @@
     src:url("Alata-Regular.ttf")
 }
 ::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
 }
 * {
-  margin: 0px;
+    margin: 0px;
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
+}
+body{
+    height: 98%;
+    width: 100%;
+    position: fixed;
 }
 header {
-  background-color: #045174;
-  color: white;
-  font-family: sans-serif;
-  font-size: 10pt;
-  margin: 0;
-  padding-top: 5pt;
-  padding-bottom: 50pt;
-  padding-left: 45pt;
+    background-color: #045174;
+    color: white;
+    font-family: sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    padding-top: 5pt;
+    padding-bottom: 50pt;
 }
 label {
     font-size: 12pt;
     font-family: alata,sans-serif;
 }
 h3 {
-  margin-top: 1%;
-  text-align: center;
-  font-family: sans-serif;
+    margin-top: 1%;
+    text-align: center;
+    font-family: sans-serif;
     font-size: 17pt;
-  font-weight: 400;
+    font-weight: 400;
 }
 .leftcol {
-  float: left;
-  width: 50%;
-  padding-top: 20pt;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 60%;
+    padding-top: 2%;
+    position: relative;
 }
 .rightcol {
-  float: left;
-  width: 50%;
-  padding-top: 20pt;
-    
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%; height: 80%;
+    padding-top: 2%;
 }
 #question {
     font-family: alata,sans-serif;
-  font-size: 12pt;
-  text-align: center;
-  margin-bottom: 20pt; 
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: 20pt; 
 }
 #search {
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: center;
+    z-index: 0;
 }
 #searchtitle{
-  margin: 0;
-  margin-left:10%;
-  text-align: left;
-  font-family: monospace;
-  color: #045174
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    color: #045174
 }
 #searchbox{
-    width:80%;
-    padding-top: 2%;
+    display: inline-block;
+    position: relative;
     float:left;
+    width:70%;
+    padding-top: 2%; 
+    margin:0;
     border: 0px;
     border-bottom: 1pt solid #045174;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
+    z-index: 0;
 }
 #searchbox:hover{
-  width:80%;
-  float:left;
-  border: 0px;
-  border-bottom: 2pt solid #045174;
+    width:71%;
+    float:left;
+    border-bottom: 2pt solid #045174;
 }
 #searchbox:focus{
     outline: none;
-    border:0px solid red;
-  border-bottom: 2pt solid #045174;
-}
-{
-  width:80%;
-  float:left;
-  border: 0px;
-  border-bottom: 2pt solid #045174;
+    border-bottom: 2pt solid #045174;
 }
 #arrow1,#arrow2{
-  width:10%;
-  float:left;
-  font-weight:900;
-  color: black;
-  cursor: pointer;
+    position: relative;
+    width:10%;
+    float:left;
+    font-weight:900;
+    color: black;
+    cursor: pointer;
     background-color: white;
     border: white;
     font-size: 1.5em;
-    color: #045174
+    color: #045174;
+    margin: 0;
+    padding: 0;
 }
 #arrow1:hover,#arrow2:hover{
     font-size: 1.6em;
@@ -108,24 +116,28 @@ h3 {
     transform: rotate(180deg)
 }
 #textbox{
-  padding: 4pt;
-  box-shadow: 0px 0px 5px gray;
-  border-radius: 10px;
-  position:relative;
+    position: fixed;
+    display: inline-block;
+    padding: 2%;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 10px;
+    position:relative;
     width: 90%;
-    height: 70%;
+    height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
     
 }
 #copiedtext{
-  margin:auto;
-  margin-top: 40pt;
-  height: 90%;
-  width: 100%;
-  resize: none;
-  border: none;
-  position:relative;
-  overflow-y:auto;
-  font-size: 12pt;
+    margin:auto;
+    margin-top: 40pt;
+    height:0%;
+    width: 90%;
+    resize: none;
+    border: none;
+    position:relative;
+    overflow-y:auto;
+    font-size: 12pt;
     font-family: alata,sans-serif;
     padding: 0% 3% 3% 3%;
 }
@@ -138,62 +150,62 @@ h3 {
     font-weight: bold;
 }
 #addCircle{
-  position: fixed;
-  font-size: 30pt;
-  font-weight: bold;
-  background-color: darksalmon;
-  border-radius: 22pt;
-  padding: 2pt 11pt;
-  margin-left: 11pt;
-  bottom: 10pt;
+    position: fixed;
+    font-size: 30pt;
+    font-weight: bold;
+    background-color: darksalmon;
+    border-radius: 22pt;
+    padding: 2pt 11pt;
+    margin-left: 11pt;
+    bottom: 10pt;
     cursor: pointer;
 }
 #addCircle:hover{
-  font-size: 33pt;
-  margin-left: 10pt;
-  bottom: 9pt;
+    font-size: 33pt;
+    margin-left: 10pt;
+    bottom: 9pt;
 }
 #newnote{
-  float:right;
-  margin-right: 20pt;
-  font-size: 25pt;
-    font-family: CustomTitle;
-  color: white;
-  border-radius: 0.4em;
+    float:right;
+    margin-right: 20pt;
+    font-size: 25pt;
+    font-family: CustomTitle, sans-serif;
+    color: white;
+    border-radius: 0.4em;
     border: 0px solid white;
     color: #045174;
-        padding: 0pt 25pt 3pt 15pt;
+    padding: 0pt 25pt 3pt 15pt;
     margin-top: 0.4%;
     background-color: white;
 }
 #newnote:hover{
     font-size:28pt;
     margin-top: 0.1%;
-  margin-right: 15pt;
+    margin-right: 15pt;
 }
 #programname{
-  float: left;
-  font-size: 50pt;
-  padding-left: 10pt;
+    float: left;
+    font-size: 50pt;
+    padding-left: 10pt;
     font-family: CustomTitle;
 }
 #textbox div{
+    display: inline-bock;
     font-family: alata,sans-serif;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 #copybox{
-  display: inline;
+    display: inline;
     border: 1pt solid gray;
-  border-radius: 30pt;
-  background-color: lightgray;
-  font-family: monospace;
-  font-size: 14pt;
-  margin-bottom: 10pt;
-  margin-left: 10pt;
-  margin-top: 10pt;
+    border-radius: 30pt;
+    background-color: lightgray;
+    font-family: monospace;
+    font-size: 14pt;
+    margin-left: 10pt;
+    margin-top: 10pt;
     padding: 0.2em 0.6em 0.3em 0.6em;
-  color:black;
-  position: relative;
+    color:black;
+    position: relative;
     cursor: pointer;
     transform: translateY(-0.375em);
 }
@@ -203,31 +215,29 @@ h3 {
 #menuIcon{
   float:left;
   color: white;
-  font-size: 32;
+  font-size: 200%;
     padding-top: 0.3%;
+    padding-left: 15pt;
 }
 #boxes{
     position: relative;
-  clear:both;
-  padding-top: 10pt;
-  padding-left: 26%;
-    height: 60%;
-    width: 60%;
+    clear:both;
+    padding-top: 0pt;
+    padding-left: 3%;
+    height: 100%;
+    width: 95%;
     overflow-y: scroll;
     z-index:0;
-    
-}
-#boxes .{
-    position: relative;
 }
 #boxes div{
     padding-bottom: 3px;
+    padding-left: 20%;
     z-index: 0;
     position: relative;
     display: inline-block;
 }
-#boxes label{
-  font-family: Alata,sans-serif;
+#boxes label {
+    font-family: Alata,sans-serif;
     font-size: 11pt;
 }
 #newChkBoxBackground{
@@ -243,7 +253,7 @@ h3 {
 }
 #newChkBox{
     display:none;
-    position: absolute;
+    position: fixed;
     top: 0%; left: 70%;
     height: 100%; width: 30%;
     background-color: white;
@@ -314,18 +324,17 @@ h3 {
 }
 #boxes input[type="checkbox"] {
     margin-right: 2%;  font: inherit;
-  color: currentColor;
-  width: 1.05em;
-  height: 1.05em;
-  border: 0.05em solid currentColor;
-  border-radius: 0.05em;
+    color: currentColor;
+    width: 1.05em;
+    height: 1.05em;
+    border: 0.05em solid currentColor;
+    border-radius: 0.05em;
     transform: translateY(0.175em);
     margin-bottom: 4%;
     cursor: pointer;
 }
 #boxes button {
     float: right;
-    margin-right: 10%;
     border: 1px solid white;
     background: white;
     color: darkgrey
@@ -333,13 +342,12 @@ h3 {
 #boxes button:hover{
     font-weight: bold;
     font-size: 1.05em;
-    margin-right: 9.7%;
     color: black
 }
 #menu{
     text-align: center;
     display:none;
-    position: absolute;
+    position: fixed;
     top: 0%; left: 0%;
     height: 100%; width: 30%;
     background-color: white;
@@ -350,6 +358,7 @@ h3 {
     color: black;
     font-family: sans-serif;
 }
+    
 #menu button{
     margin-top:2%;
 }
@@ -370,61 +379,121 @@ h3 {
     margin-left: 20pt;
     margin-right: 20pt;
 }
-
 .star {
     visibility:hidden;
     cursor:pointer;
 }
 .star:before {
-   content: "\2606";
+    content: "\2606";
     font-size:18pt;
     color: gold;
     transform: translateY(-7pt);
-   position: absolute;
-   visibility:visible;
+    position: absolute;
+    visibility:visible;
 }
 .star:checked:before {
-   content: "\2605";
-   position: absolute;
+    content: "\2605";
+    position: absolute;
 }
-
 /* Tooltip text */
 #boxes div .tooltiptext {
-  visibility: hidden;
-  width: 220px;
-  background-color: #045174;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+    visibility: hidden;
+    width: 220px;
+    background-color: #045174;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
     font-size: 10pt;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 2%;
-  margin-left: -60px;
-
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 30%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
-
 /* Tooltip arrow */
 #boxes div .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 28%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #045174 transparent transparent transparent;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #045174 transparent transparent transparent;
 }
-
 /* Show the tooltip text when you mouse over the tooltip container */
 #boxes div:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
+}
+@media (max-height : 520px) and (orientation:landscape) {
+    body{
+        height: 60%;
+    }
+    #boxes div .tooltiptext {
+        transition: opacity 0s;
+    }
+    #boxes div:hover .tooltiptext {
+        visibility: none;
+        opacity: 0;
+    }
+    #addCircle{
+        margin-left:0%;
+}
+}
+@media screen and (orientation:portrait) {
+    body {
+        height: 98%;
+    }
+    #boxes{
+        padding-left: 3%;
+        width: 95%;
+    }
+    #boxes div{
+        padding-left: 2%;   
+    }
+    #boxes div .tooltiptext {
+        transition: opacity 0s;
+        opacity: 0;
+    }
+    #boxes div:hover .tooltiptext {
+        visibility: none;
+        opacity: 0;
+    }
+    #search{
+        margin-left: 0%;
+    }
+    .leftcol {
+        padding-top: 0%;
+    }
+    #question {
+        margin-bottom: 0%;
+    }
+    #newnote{
+        margin-right: 0%; margin-top: 2%;
+        font-size: 15pt;
+        padding: 3pt 6pt 3pt 3pt;
+    }
+    #menu{
+        width: 100%;
+    }
+    #newChkBox{
+        width: 100%;
+        left: 0%;
+    }
+    #menuIcon{
+        padding-left: 5pt;
+    }
+    #arrow1, #arrow2{
+        font-size: 1em;
+    }
+    #programname{
+        font-size: 30pt;
+    }
+    
 }
